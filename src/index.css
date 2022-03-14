@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navbar CSS */
+.nav {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav .container .websiteName {
+    color: #a88c60;
+    padding-left: 3rem;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.nav span {
+    margin: 1em;
+    color: #a88c60;
+    font-size: larger;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+nav span:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Home CSS */
+.home {
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/961402/pexels-photo-961402.jpeg?cs=srgb&dl=pexels-alena-koval-961402.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* display: flex; */
+}
+
+.home .flowerDiv {
+    height: 250px;
+    width: auto;
+    padding-top: 7%;
+}
+
+.home .HomeDiv {
+    color: #a88c60;
+    text-align: left;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200%;
+}
+
+.home .HomeDiv > p {
+    padding: 0.5rem;
+}
+
+/* About CSS */
+.about {
+    height: 100vh;
+}
+
+.contact {
+    height: 100vh;
 }
