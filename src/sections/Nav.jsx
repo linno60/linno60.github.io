@@ -5,6 +5,7 @@ function Nav() {
     const navLinks = [
         { navLinkId: 'Home', scrollToId: 'homeContainer' },
         { navLinkId: 'About', scrollToId: 'aboutContainer' },
+        { navLinkId: 'Project', scrollToId: 'projectContainer' },
         { navLinkId: 'Contact', scrollToId: 'contactContainer' },
     ]
 
@@ -19,7 +20,11 @@ function Nav() {
         }
 
         return (
-            <span id={navLinkId} className={navLinkId} onClick={handleClick}>
+            <span
+                id={navLinkId}
+                className={activeNavLinkId}
+                onClick={handleClick}
+            >
                 {navLinkId}
             </span>
         )

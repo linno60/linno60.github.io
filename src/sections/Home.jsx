@@ -1,7 +1,6 @@
 import { useLottie } from '../hooks/useLottie'
 import flower from '../lotties/flower.json'
 import arrow from '../lotties/arrow.json'
-import About from './About'
 import { useNav } from '../hooks/useNav'
 
 function Home() {
@@ -10,9 +9,11 @@ function Home() {
 
     const homeRef = useNav('Home')
 
-    // const scrollToAbout = () => {
-
-    // }
+    const scrollToAbout = () => {
+        document
+            .getElementById('aboutContainer')
+            .scrollIntoView({ behavior: 'smooth' })
+    }
 
     return (
         <section ref={homeRef} id='homeContainer' className='home'>
@@ -39,7 +40,7 @@ function Home() {
                     <div className='col-start-5 col-span-1'>
                         <div className='row-start-6 row-span-1'>
                             <button
-                                // onClick={scrollToAbout}
+                                onClick={scrollToAbout}
                                 className='arrowDiv'
                                 ref={arrowAnimation}
                             />

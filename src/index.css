@@ -77,11 +77,26 @@ nav span:hover {
     padding: 0.5rem;
 }
 
+.home .arrowDiv {
+    height: 200px;
+    width: auto;
+}
+
+.home .arrowDiv:hover {
+    background-color: rgb(168 140 96 / 15%);
+    transform: scale(1.1);
+    border-radius: 50%;
+}
+
 /* About CSS */
 .about {
     height: 100vh;
 }
 
 .contact {
+    height: 100vh;
+}
+
+.project {
     height: 100vh;
 }
