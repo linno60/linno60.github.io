@@ -2,6 +2,7 @@ import { useLottie } from '../hooks/useLottie'
 import flower from '../lotties/flower.json'
 import arrow from '../lotties/arrow.json'
 import { useNav } from '../hooks/useNav'
+import { useTyped } from '../hooks/useTyped'
 
 function Home() {
     const flowerAnimation = useLottie(flower)
@@ -14,6 +15,14 @@ function Home() {
             .getElementById('aboutContainer')
             .scrollIntoView({ behavior: 'smooth' })
     }
+
+    const strings = [
+        'web design',
+        'listening to music',
+        'watching series',
+        'playing video games',
+    ]
+    const el = useTyped(strings)
 
     return (
         <section ref={homeRef} id='homeContainer' className='home'>
@@ -33,7 +42,9 @@ function Home() {
                                     Working to become a great front-end
                                     developer
                                 </p>
-                                <p>I enjoy</p>
+                                <p>
+                                    I enjoy <span ref={el} />
+                                </p>
                             </div>
                         </div>
                     </div>
