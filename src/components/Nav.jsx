@@ -31,17 +31,19 @@ function Nav() {
     }
 
     return (
-        <nav className='nav'>
-            <div className='container'>
-                <h1 className='websiteName'>Me</h1>
-                <div className='navLinks'>
-                    {navLinks.map(({ navLinkId, scrollToId }, idx) => (
-                        <NavLink
-                            key={idx}
-                            navLinkId={navLinkId}
-                            scrollToId={scrollToId}
-                        />
-                    ))}
+        <nav className='nav navbar bg-base-100'>
+            <div className='container flex-1"'>
+                <h1 className='websiteName'>Lin Liu</h1>
+                <div class='flex-none'>
+                    <div className='navLinks'>
+                        {navLinks.map(({ navLinkId, scrollToId }, idx) => (
+                            <NavLink
+                                key={idx}
+                                navLinkId={navLinkId}
+                                scrollToId={scrollToId}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </nav>

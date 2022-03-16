@@ -1,11 +1,11 @@
 import { useLottie } from '../hooks/useLottie'
-import flower from '../lotties/flower.json'
+import tiger from '../lotties/tiger.json'
 import arrow from '../lotties/arrow.json'
 import { useNav } from '../hooks/useNav'
 import { useTyped } from '../hooks/useTyped'
 
 function Home() {
-    const flowerAnimation = useLottie(flower)
+    const tigerAnimation = useLottie(tiger)
     const arrowAnimation = useLottie(arrow)
 
     const homeRef = useNav('Home')
@@ -26,37 +26,28 @@ function Home() {
 
     return (
         <section ref={homeRef} id='homeContainer' className='home'>
-            <div className='grid grid-rows-6'>
-                <div className='grid grid-cols-6'>
-                    <div className='col-start-6 col-span-1'>
-                        <div className='row-start-1 row-span-1'>
-                            <div className='flowerDiv' ref={flowerAnimation} />
-                        </div>
+            <div className='grid grid-cols-5 grid-rows-5 col-gap-3 row-gap-10'>
+                <div className='col-span-5' />
+                <div className='col-span-1' />
+                <div className='col-span-2'>
+                    <div className='HomeDiv'>
+                        <p>I'm Lin</p>
+                        <p>Working to become a great front-end developer</p>
+                        <p>
+                            I enjoy <span ref={el} />
+                        </p>
                     </div>
-                    <div className='col-start-4 col-span-2'>
-                        <div className='row-start-2 row-span-2'>
-                            <div className='HomeDiv'>
-                                <p>Hi</p>
-                                <p>I'm Lin</p>
-                                <p>
-                                    Working to become a great front-end
-                                    developer
-                                </p>
-                                <p>
-                                    I enjoy <span ref={el} />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='col-start-5 col-span-1'>
-                        <div className='row-start-6 row-span-1'>
-                            <button
-                                onClick={scrollToAbout}
-                                className='arrowDiv'
-                                ref={arrowAnimation}
-                            />
-                        </div>
-                    </div>
+                </div>
+                <div className='col-span-1'>
+                    <div className='tigerDiv' ref={tigerAnimation} />
+                </div>
+                <div className='col-span-2' />
+                <div className='col-span-1'>
+                    <button
+                        onClick={scrollToAbout}
+                        className='arrowDiv'
+                        ref={arrowAnimation}
+                    />
                 </div>
             </div>
         </section>
