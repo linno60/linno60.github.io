@@ -3,11 +3,13 @@ import { useNav } from '../../hooks/useNav'
 import ProjectTemplate from './ProjectTemplate'
 import ProjectData from './ProjectData'
 import Modal from 'react-modal'
+import { IoCloseOutline } from 'react-icons/io5'
 
 function Project() {
     const projectRef = useNav('Home')
 
     // Modal
+    let subtitle
     const [imgTitle, setimgTitle] = useState('')
     const [modalIsOpen, setModalIsOpen] = useState(false)
 
@@ -16,13 +18,24 @@ function Project() {
         setimgTitle(e.target.alt)
     }
 
-    // function afterOpenModal1() {
-    //     // references are now sync'd and can be accessed.
-    //     subtitle.style.color = '#f00'
-    // }
+    function afterOpenModal() {
+        // references are now sync'd and can be accessed.
+        subtitle.style.color = '#f00'
+    }
 
     const closeModal = () => {
         setModalIsOpen(false)
+    }
+
+    const customStyles = {
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+        },
     }
 
     return (
@@ -41,15 +54,53 @@ function Project() {
                             key={project.title}
                         />
                     ))}
+                </div>
+            </div>
 
-                    <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+            <div className='modal'>
+                <Modal
+                    isOpen={modalIsOpen}
+                    onAfterOpen={afterOpenModal}
+                    onRequestClose={closeModal}
+                    style={{
+                        overlay: {
+                            position: 'fixed',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            backgroundColor: 'rgba(255, 255, 255, 0.75)',
+                        },
+                        content: {
+                            position: 'absolute',
+                            top: '20%',
+                            left: '15%',
+                            right: '15%',
+                            bottom: '20%',
+                            border: '1px solid #ccc',
+                            background: '#fff',
+                            overflow: 'auto',
+                            WebkitOverflowScrolling: 'touch',
+                            borderRadius: '25px',
+                            outline: 'none',
+                            padding: '20px',
+                        },
+                    }}
+                >
+                    <div className='modalButton'>
+                        <button className='' onClick={closeModal}>
+                            <IoCloseOutline size={56} />
+                        </button>
+                    </div>
+
+                    <div className='projectDetail'>
                         {ProjectData.filter(
                             (project) => project.title === imgTitle
                         ).map((filteredProject) => (
                             <ProjectTemplate {...filteredProject} />
                         ))}
-                    </Modal>
-                </div>
+                    </div>
+                </Modal>
             </div>
         </section>
     )

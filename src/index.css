@@ -117,13 +117,13 @@ nav span:hover {
 }
 
 /* About CSS */
-.about {
-    height: 100vh;
-}
-
-.about .reserveTop {
+.reserveTop {
     height: 64px;
     visibility: hidden;
+}
+
+.about {
+    height: 100vh;
 }
 
 .about .aboutTitle {
@@ -198,11 +198,6 @@ nav span:hover {
     height: 100vh;
 }
 
-.project .reserveTop {
-    height: 64px;
-    visibility: hidden;
-}
-
 .project .projectTitle {
     text-align: center;
     margin-top: 30px;
@@ -229,35 +224,14 @@ nav span:hover {
     margin: 40px;
 }
 
-/* .projectTemplate .projectItem {
-    width: 50%;
-} */
-
-/* .projectTemplate .projectItem .card-body {
-    width: 60%;
-} */
-
-/* .project .projectCard {
-    border: solid #cfe2f3;
-    background-color: #fff;
-    width: 45%;
-    margin: 20px;
-    display: inline-block;
-} */
-
-/* .projectItem {
-    display: flex;
+.modalButton {
+    position: absolute;
+    right: 15px;
 }
 
-.projectItem .projectLeft {
-    width: 30%;
-    height: auto;
-} */
-
-/* .projectItem .projectImg {
-    height: 100px;
-    width: auto;
-} */
+.projectDetail {
+    margin-top: 8%;
+}
 
 /* Contact CSS */
 .contact {

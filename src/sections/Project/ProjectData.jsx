@@ -2,6 +2,12 @@ import mongoDB from '../../assets/images/mongoDB.png'
 import express from '../../assets/images/express.png'
 import react from '../../assets/images/react.png'
 import node from '../../assets/images/node.png'
+import redux from '../../assets/images/redux.png'
+import firebase from '../../assets/images/firebase.png'
+import html from '../../assets/images/html.png'
+import css from '../../assets/images/css.png'
+import leaflet from '../../assets/images/leaflet.png'
+import tailwind from '../../assets/images/tailwind.png'
 
 import supportDesk from '../../assets/screenshots/supportDesk.png'
 import houseMarket from '../../assets/screenshots/houseMarket.png'
@@ -25,17 +31,18 @@ const ProjectData = [
         links: [
             {
                 content: 'https://linsupportdesk.herokuapp.com/',
-                iconImage: <FaLink />,
+                iconImage: <FaLink color='#6fa8dc' size={42} />,
             },
             {
                 content: 'https://github.com/linno60/support-desk-app',
-                iconImage: <FaGithub />,
+                iconImage: <FaGithub size={42} />,
             },
         ],
         stacks: [
             { content: 'MongoDB', iconImage: mongoDB },
             { content: 'Express', iconImage: express },
             { content: 'React', iconImage: react },
+            { content: 'Redux', iconImage: redux },
             { content: 'Node.js', iconImage: node },
         ],
     },
@@ -55,16 +62,17 @@ const ProjectData = [
             {
                 content:
                     'https://house-marketplace-project-linno60.vercel.app/',
-                iconImage: <FaLink />,
+                iconImage: <FaLink color='#6fa8dc' size={42} />,
             },
             {
                 content: 'https://github.com/linno60/house-marketplace-project',
-                iconImage: <FaGithub />,
+                iconImage: <FaGithub size={42} />,
             },
         ],
         stacks: [
             { content: 'React', iconImage: react },
-            { content: 'Node.js', iconImage: node },
+            { content: 'Firebase', iconImage: firebase },
+            { content: 'Leaflet', iconImage: leaflet },
         ],
     },
 
@@ -82,16 +90,17 @@ const ProjectData = [
         links: [
             {
                 content: 'https://github-finder-linno60.vercel.app/',
-                iconImage: <FaLink />,
+                iconImage: <FaLink color='#6fa8dc' size={42} />,
             },
             {
                 content: 'https://github.com/linno60/github-finder',
-                iconImage: <FaGithub />,
+                iconImage: <FaGithub size={42} />,
             },
         ],
         stacks: [
+            { content: 'HTML5', iconImage: html },
             { content: 'React', iconImage: react },
-            { content: 'Node.js', iconImage: node },
+            { content: 'TailwindCSS', iconImage: tailwind },
         ],
     },
 
@@ -100,22 +109,26 @@ const ProjectData = [
         screenshot: feedbackApp,
         description: (
             <div>
-                <p>Simple starter web app using React.</p>
+                <p>
+                    A simple web app using React. Users can select ratings and
+                    write reviews.
+                </p>
             </div>
         ),
         links: [
             {
                 content: 'https://infallible-easley-2128aa.netlify.app/',
-                iconImage: <FaLink />,
+                iconImage: <FaLink color='#6fa8dc' size={42} />,
             },
             {
                 content: 'https://github.com/linno60/feedback-app',
-                iconImage: <FaGithub />,
+                iconImage: <FaGithub size={42} />,
             },
         ],
         stacks: [
+            { content: 'HTML5', iconImage: html },
+            { content: 'CSS3', iconImage: css },
             { content: 'React', iconImage: react },
-            { content: 'Node.js', iconImage: node },
         ],
     },
 ]

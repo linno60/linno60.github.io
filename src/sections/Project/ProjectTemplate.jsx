@@ -15,29 +15,37 @@ const ProjectTemplate = (props) => {
     const { screenshot, title, description, links, stacks } = props
 
     return (
-        <div className='projectTemplate grid grid-cols-5'>
-            <div className='projectItem card card-side bg-base-100 shadow-xl col-start-2 col-span-3'>
+        <div className='projectTemplate'>
+            <div className='projectItem grid grid-cols-2 gap-5'>
                 <figure>
                     {screenshot && (
-                        <div>
+                        <div className='shadow-lg'>
                             <img src={screenshot} alt={title} />
                         </div>
                     )}
                 </figure>
-                <div className='card-body'>
-                    {title && <h4 className='card-title'>{title}</h4>}
+                <div className='text-center'>
+                    {title && (
+                        <h4 className='font-sans text-3xl font-bold'>
+                            {title}
+                        </h4>
+                    )}
 
-                    {description && <div>{description}</div>}
+                    {description && (
+                        <div className='mt-4 font-sans text-lg'>
+                            {description}
+                        </div>
+                    )}
 
                     {links && (
-                        <div>
+                        <div className='mt-5'>
                             {links.map((link) => (
                                 <a
                                     key={link.content}
                                     href={link.content}
                                     target='_blank'
                                     rel='noreferrer'
-                                    className='mx-3 display: inline-block'
+                                    className='mx-5 display: inline-block'
                                 >
                                     {link.iconImage}
                                 </a>
@@ -46,9 +54,9 @@ const ProjectTemplate = (props) => {
                     )}
 
                     {stacks && (
-                        <div>
-                            <h4>Stacks</h4>
-                            <ul>
+                        <div className='mt-4'>
+                            <h4 className='font-sans text-xl'>Stacks</h4>
+                            <ul className='mt-4'>
                                 {stacks.map((stack) => (
                                     <li
                                         key={stack.content}
@@ -58,7 +66,7 @@ const ProjectTemplate = (props) => {
                                         <img
                                             src={stack.iconImage}
                                             alt='stack Used'
-                                            className='h-10 mx-2'
+                                            className='h-10 mx-5'
                                             data-tooltip-target='tooltip-default'
                                         />
                                     </li>
