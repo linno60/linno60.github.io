@@ -136,7 +136,7 @@ nav span:hover {
 }
 
 .about .aboutMe {
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
     color: #977e56;
     font-family: 'Open Sans', sans-serif;
@@ -175,7 +175,7 @@ nav span:hover {
 }
 
 .skillItem {
-    margin: 1.75rem 2.75rem;
+    margin: 1.75rem 5%;
     justify-content: center;
     text-align: center;
 }
@@ -193,12 +193,73 @@ nav span:hover {
     animation: shrink 0.5s;
 }
 
-/* Contact CSS */
-
-.contact {
+/* Project CSS */
+.project {
     height: 100vh;
 }
 
-.project {
+.project .reserveTop {
+    height: 64px;
+    visibility: hidden;
+}
+
+.project .projectTitle {
+    text-align: center;
+    margin-top: 30px;
+    color: #a86860;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.project .projectGalery .projectList {
+    background-color: #fff;
+    border: solid #cfe2f3;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.project .projectGalery .projectList img {
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    margin: 40px;
+}
+
+/* .projectTemplate .projectItem {
+    width: 50%;
+} */
+
+/* .projectTemplate .projectItem .card-body {
+    width: 60%;
+} */
+
+/* .project .projectCard {
+    border: solid #cfe2f3;
+    background-color: #fff;
+    width: 45%;
+    margin: 20px;
+    display: inline-block;
+} */
+
+/* .projectItem {
+    display: flex;
+}
+
+.projectItem .projectLeft {
+    width: 30%;
+    height: auto;
+} */
+
+/* .projectItem .projectImg {
+    height: 100px;
+    width: auto;
+} */
+
+/* Contact CSS */
+.contact {
     height: 100vh;
 }

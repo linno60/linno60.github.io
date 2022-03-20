@@ -1,6 +1,6 @@
 import { useLottie } from '../hooks/useLottie'
-import tiger from '../lotties/tiger.json'
-import arrow from '../lotties/arrow.json'
+import tiger from '../assets/lotties/tiger.json'
+import arrow from '../assets/lotties/arrow.json'
 import { useNav } from '../hooks/useNav'
 import { useTyped } from '../hooks/useTyped'
 

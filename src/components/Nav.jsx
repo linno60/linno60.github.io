@@ -34,7 +34,7 @@ function Nav() {
         <nav className='nav navbar bg-base-100'>
             <div className='container flex-1"'>
                 <h1 className='websiteName'>Lin Liu</h1>
-                <div class='flex-none'>
+                <div className='flex-none'>
                     <div className='navLinks'>
                         {navLinks.map(({ navLinkId, scrollToId }, idx) => (
                             <NavLink
