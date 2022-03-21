@@ -176,16 +176,18 @@ nav span:hover {
 
 .skillItem {
     margin: 1.75rem 5%;
-    justify-content: center;
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skillIcon {
     height: 3.75em;
     width: auto;
     padding-top: 0.75em;
-    justify-content: center;
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     color: #607ca8;
 }
 
