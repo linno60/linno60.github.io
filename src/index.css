@@ -38,6 +38,23 @@ body {
     }
 }
 
+@keyframes spinIn {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinOut {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
 /* Navbar CSS */
 .nav {
     position: fixed;
@@ -240,7 +257,8 @@ nav span:hover {
 
 /* Contact CSS */
 .contact {
-    height: 100vh;
+    height: calc(100vh * 0.95);
+    /* height: 100vh; */
 }
 
 .contact .contactTitle {
@@ -275,6 +293,31 @@ nav span:hover {
     margin: 10% 5% 3% 5%;
 }
 
+.contact .contactLinks .contactIcon {
+    animation: spinOut 0.2s;
+}
+
+.contact .contactLinks .contactIcon:hover {
+    animation: spinIn 0.2s;
+}
+
 .contact .contactCard .contactButton .mailButton {
     height: 100px;
 }
+
+/* Footer CSS */
+footer {
+    height: calc(100vh * 0.05);
+    /* background-color: #fff; */
+    /* color: #977e56; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footerAbove {
+    display: flex;
+    justify-content: center;
+}
+
+/* .footerBottom {
+    text-align: center;
+} */

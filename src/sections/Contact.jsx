@@ -27,7 +27,11 @@ function Contact() {
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <FaGithub color='#171515' size={42} />
+                            <FaGithub
+                                className='contactIcon'
+                                color='#171515'
+                                size={42}
+                            />
                         </a>
                         <a
                             href='https://www.linkedin.com/in/lin-liu-224167145/'
@@ -35,7 +39,11 @@ function Contact() {
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <FaLinkedin color='#0e76a8' size={42} />
+                            <FaLinkedin
+                                className='contactIcon'
+                                color='#0e76a8'
+                                size={42}
+                            />
                         </a>
                     </div>
                     <div className='contactButton'>
