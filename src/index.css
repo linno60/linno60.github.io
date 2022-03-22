@@ -13,10 +13,10 @@
 body {
     width: 100%;
     height: 100%;
-    background: url('https://images.pexels.com/photos/6775241/pexels-photo-6775241.jpeg?cs=srgb&dl=pexels-ben-mack-6775241.jpg&fm=jpg');
+    background: url('./assets/images/backgroundImg.jpg');
     background-position: center;
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     /* position: relative; */
 }
 
@@ -86,6 +86,10 @@ nav span:hover {
     /* display: flex; */
 }
 
+.home .homeIntro {
+    margin-top: 7%;
+}
+
 .home .tigerDiv {
     height: 250px;
     width: auto;
@@ -102,6 +106,11 @@ nav span:hover {
 
 .home .HomeDiv > p {
     padding: 0.5rem;
+}
+
+.home .arrowButton {
+    text-align: center;
+    margin-top: 2%;
 }
 
 .home .arrowDiv {
@@ -147,21 +156,17 @@ nav span:hover {
     margin: auto;
     margin-top: 3.75em;
     width: 60%;
-    justify-content: center;
-    text-align: center;
 }
 
 /* Skills */
 .skills {
     border: solid #cfe2f3;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 25px;
-    justify-content: center;
-    text-align: center;
 }
 
 .skillsTitle {
-    justify-content: center;
     text-align: center;
     color: #a86860;
     font-size: 2em;
@@ -170,8 +175,6 @@ nav span:hover {
 .skillInfoList {
     display: flex;
     text-align: center;
-    justify-content: center;
-    /* color: #607ca8; */
 }
 
 .skillItem {
@@ -238,4 +241,40 @@ nav span:hover {
 /* Contact CSS */
 .contact {
     height: 100vh;
+}
+
+.contact .contactTitle {
+    text-align: center;
+    margin-top: 30px;
+    color: #a86860;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.contact .contactCard {
+    width: 30%;
+    height: 30%;
+    margin: 2% auto;
+    background-color: #fff;
+    border: solid #cfe2f3;
+    border-radius: 25px;
+    /* text-align: center; */
+}
+
+.contact .contactCard .contactInfo {
+    text-align: center;
+}
+
+.contact .contactLinks {
+    display: flex;
+    justify-content: center;
+}
+
+.contact .contactLinks a {
+    margin: 10% 5% 3% 5%;
+}
+
+.contact .contactCard .contactButton .mailButton {
+    height: 100px;
 }

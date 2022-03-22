@@ -14,6 +14,7 @@ function Project() {
     const [modalIsOpen, setModalIsOpen] = useState(false)
 
     const openModal = (e) => {
+        e.preventDefault()
         setModalIsOpen(true)
         setimgTitle(e.target.alt)
     }
@@ -25,17 +26,6 @@ function Project() {
 
     const closeModal = () => {
         setModalIsOpen(false)
-    }
-
-    const customStyles = {
-        content: {
-            top: '50%',
-            left: '50%',
-            right: 'auto',
-            bottom: 'auto',
-            marginRight: '-50%',
-            transform: 'translate(-50%, -50%)',
-        },
     }
 
     return (

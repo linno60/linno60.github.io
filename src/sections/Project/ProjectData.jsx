@@ -35,7 +35,7 @@ const ProjectData = [
             },
             {
                 content: 'https://github.com/linno60/support-desk-app',
-                iconImage: <FaGithub size={42} />,
+                iconImage: <FaGithub color='#171515' size={42} />,
             },
         ],
         stacks: [
@@ -66,7 +66,7 @@ const ProjectData = [
             },
             {
                 content: 'https://github.com/linno60/house-marketplace-project',
-                iconImage: <FaGithub size={42} />,
+                iconImage: <FaGithub color='#171515' size={42} />,
             },
         ],
         stacks: [
@@ -94,7 +94,7 @@ const ProjectData = [
             },
             {
                 content: 'https://github.com/linno60/github-finder',
-                iconImage: <FaGithub size={42} />,
+                iconImage: <FaGithub color='#171515' size={42} />,
             },
         ],
         stacks: [
@@ -122,7 +122,7 @@ const ProjectData = [
             },
             {
                 content: 'https://github.com/linno60/feedback-app',
-                iconImage: <FaGithub size={42} />,
+                iconImage: <FaGithub color='#171515' size={42} />,
             },
         ],
         stacks: [

@@ -19,15 +19,15 @@ function Home() {
     const strings = [
         'web design',
         'listening to music',
-        'watching series',
+        'watching TV series',
         'playing video games',
     ]
     const el = useTyped(strings)
 
     return (
         <section ref={homeRef} id='homeContainer' className='home'>
-            <div className='grid grid-cols-5 grid-rows-5 col-gap-3 row-gap-10'>
-                <div className='col-span-5' />
+            <div className='reserveTop' />
+            <div className='grid grid-cols-5 col-gap-3 homeIntro'>
                 <div className='col-span-1' />
                 <div className='col-span-2'>
                     <div className='HomeDiv'>
@@ -38,17 +38,17 @@ function Home() {
                         </p>
                     </div>
                 </div>
+
                 <div className='col-span-1'>
                     <div className='tigerDiv' ref={tigerAnimation} />
                 </div>
-                <div className='col-span-2' />
-                <div className='col-span-1'>
-                    <button
-                        onClick={scrollToAbout}
-                        className='arrowDiv'
-                        ref={arrowAnimation}
-                    />
-                </div>
+            </div>
+            <div className='arrowButton'>
+                <button
+                    onClick={scrollToAbout}
+                    className='arrowDiv'
+                    ref={arrowAnimation}
+                />
             </div>
         </section>
     )
