@@ -13,9 +13,8 @@ function About() {
         <section ref={aboutRef} id='aboutContainer' className='about'>
             <div className='reserveTop' />
             <div className='aboutTitle'>About Me</div>
-            <div className='grid grid-cols-5 col-gap-5 aboutDiv'>
-                <div className='col-span-1' />
-                <div className='col-span-2 aboutMe'>
+            <div className='aboutDiv'>
+                <div className='aboutMe'>
                     <p>I was born in China and came to Canada when I was 15.</p>
                     <br />
                     <p>
@@ -28,7 +27,7 @@ function About() {
                         front-end.
                     </p>
                 </div>
-                <div className='col-span-1' ref={girl} />
+                <div className='thinkingGirl' ref={girl} />
             </div>
             <div className='aboutSkills'>
                 <Skills />

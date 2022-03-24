@@ -11,16 +11,70 @@
     font-weight: bolder;
 }
 
-.about .aboutMe {
+.about .aboutDiv {
+    display: flex;
+}
+
+.about .aboutDiv .aboutMe {
     text-align: left;
     margin-top: 30px;
+    margin-left: 20%;
+    width: 40%;
     color: #977e56;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
 }
 
-.aboutSkills {
+.about .aboutDiv .thinkingGirl {
+    width: 20%;
+    height: auto;
+}
+
+.about .aboutSkills {
     margin: auto;
     margin-top: 3.75em;
     width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    .about .aboutDiv {
+        display: block;
+    }
+
+    .about .aboutDiv .aboutMe {
+        width: 60%;
+    }
+
+    .about .aboutDiv .thinkingGirl {
+        margin: auto;
+        width: 30%;
+        margin-top: 3%;
+    }
+
+    .about .aboutSkills {
+        margin: auto;
+        margin-top: 3%;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about .aboutTitle {
+        font-size: 2rem;
+    }
+
+    .about .aboutDiv .aboutMe {
+        text-align: left;
+        margin-top: 30px;
+        margin-left: 10%;
+        width: 80%;
+        color: #977e56;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.3rem;
+    }
+
+    .about .aboutSkills {
+        margin-top: 5%;
+        width: 90%;
+    }
 }

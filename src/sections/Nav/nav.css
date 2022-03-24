@@ -71,3 +71,13 @@
         transition: all 0.3s ease-in-out;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .nav .websiteName {
+        padding-left: 10%;
+    }
+
+    .nav .navButton {
+        padding-right: 10%;
+    }
+}
