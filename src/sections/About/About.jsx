@@ -2,6 +2,7 @@ import { useNav } from '../../hooks/useNav'
 import { useLottie } from '../../hooks/useLottie'
 import thinkingGirl from '../../assets/lotties/thinkingGirl.json'
 import Skills from './Skills'
+import './about.css'
 
 function About() {
     const aboutRef = useNav('Home')

@@ -1,10 +1,10 @@
 import React from "react";
-import Nav from "./sections/Nav"
-import Home from './sections/Home'
+import Nav from "./sections/Nav/Nav"
+import Home from './sections/Home/Home'
 import About from "./sections/About/About"
 import Project from "./sections/Project/Project"
-import Contact from "./sections/Contact"
-import Footer from './sections/Footer'
+import Contact from "./sections/Contact/Contact"
+import Footer from './sections/Footer/Footer'
 import { NavProvider } from './context/NavContext';
 
 function App() {

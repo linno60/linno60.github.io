@@ -1,8 +1,9 @@
-import { useLottie } from '../hooks/useLottie'
-import tiger from '../assets/lotties/tiger.json'
-import arrow from '../assets/lotties/arrow.json'
-import { useNav } from '../hooks/useNav'
-import { useTyped } from '../hooks/useTyped'
+import { useLottie } from '../../hooks/useLottie'
+import tiger from '../../assets/lotties/tiger.json'
+import arrow from '../../assets/lotties/arrow.json'
+import { useNav } from '../../hooks/useNav'
+import { useTyped } from '../../hooks/useTyped'
+import './home.css'
 
 function Home() {
     const tigerAnimation = useLottie(tiger)
@@ -27,22 +28,18 @@ function Home() {
     return (
         <section ref={homeRef} id='homeContainer' className='home'>
             <div className='reserveTop' />
-            <div className='grid grid-cols-5 col-gap-3 homeIntro'>
-                <div className='col-span-1' />
-                <div className='col-span-2'>
-                    <div className='HomeDiv'>
-                        <p>I'm Lin</p>
-                        <p>Working to become a great front-end developer</p>
-                        <p>
-                            I enjoy <span ref={el} />
-                        </p>
-                    </div>
+            <div className='homeIntro'>
+                <div className='HomeDiv'>
+                    <p>I'm Lin</p>
+                    <p>Working to become a great front-end developer</p>
+                    <p>
+                        I enjoy <span ref={el} />
+                    </p>
                 </div>
 
-                <div className='col-span-1'>
-                    <div className='tigerDiv' ref={tigerAnimation} />
-                </div>
+                <div className='tigerDiv' ref={tigerAnimation} />
             </div>
+
             <div className='arrowButton'>
                 <button
                     onClick={scrollToAbout}

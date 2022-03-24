@@ -1,0 +1,47 @@
+.contact {
+    height: calc(100vh * 0.93);
+    /* height: 100vh; */
+}
+
+.contact .contactTitle {
+    text-align: center;
+    margin-top: 30px;
+    color: #a86860;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.contact .contactCard {
+    width: 30%;
+    height: 30%;
+    margin: 2% auto;
+    background-color: #fff;
+    border: solid #cfe2f3;
+    border-radius: 25px;
+}
+
+.contact .contactCard .contactInfo {
+    text-align: center;
+}
+
+.contact .contactLinks {
+    display: flex;
+    justify-content: center;
+}
+
+.contact .contactLinks a {
+    margin: 10% 5% 3% 5%;
+}
+
+.contact .contactLinks .contactIcon {
+    animation: spinOut 0.2s;
+}
+
+.contact .contactLinks .contactIcon:hover {
+    animation: spinIn 0.2s;
+}
+
+.contact .contactCard .contactButton .mailButton {
+    height: 100px;
+}

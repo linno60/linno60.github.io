@@ -1,9 +1,8 @@
-import { useNav } from '../hooks/useNav'
+import { useNav } from '../../hooks/useNav'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import ButtonMailTo from '../components/ButtonMailTo'
-
-import sayHi from '../assets/lotties/sayHi.json'
-import { useLottie } from '../hooks/useLottie'
+import sayHi from '../../assets/lotties/sayHi.json'
+import { useLottie } from '../../hooks/useLottie'
+import './contact.css'
 
 function Contact() {
     const contactRef = useNav('Home')

@@ -4,12 +4,12 @@ import ProjectTemplate from './ProjectTemplate'
 import ProjectData from './ProjectData'
 import Modal from 'react-modal'
 import { IoCloseOutline } from 'react-icons/io5'
+import './project.css'
 
 function Project() {
     const projectRef = useNav('Home')
 
     // Modal
-    let subtitle
     const [imgTitle, setimgTitle] = useState('')
     const [modalIsOpen, setModalIsOpen] = useState(false)
 
@@ -17,11 +17,6 @@ function Project() {
         e.preventDefault()
         setModalIsOpen(true)
         setimgTitle(e.target.alt)
-    }
-
-    function afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        subtitle.style.color = '#f00'
     }
 
     const closeModal = () => {
@@ -33,8 +28,8 @@ function Project() {
             <div className='reserveTop' />
             <div className='projectTitle'>Projects</div>
 
-            <div className='projectGalery grid grid-cols-5'>
-                <div className='projectList col-start-2 col-span-3'>
+            <div className='projectGalery'>
+                <div className='projectList'>
                     {ProjectData.map((project) => (
                         <img
                             onClick={openModal}
@@ -50,7 +45,6 @@ function Project() {
             <div className='modal'>
                 <Modal
                     isOpen={modalIsOpen}
-                    onAfterOpen={afterOpenModal}
                     onRequestClose={closeModal}
                     style={{
                         overlay: {

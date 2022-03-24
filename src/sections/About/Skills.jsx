@@ -6,6 +6,7 @@ import {
     FaPython,
     FaGithub,
 } from 'react-icons/fa'
+import './skills.css'
 
 function Skills() {
     return (
