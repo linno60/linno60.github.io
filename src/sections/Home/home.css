@@ -15,7 +15,7 @@
     width: auto;
 }
 
-.home .HomeDiv {
+.home .homeDiv {
     color: #977e56;
     text-align: left;
     margin-left: 20%;
@@ -24,7 +24,7 @@
     font-size: 2rem;
 }
 
-.home .HomeDiv > p {
+.home .homeDiv > p {
     padding: 0.5rem;
 }
 
@@ -43,4 +43,49 @@
     background-color: rgb(168 140 96 / 15%);
     transform: scale(1.1);
     border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .home .homeIntro {
+        display: block;
+    }
+
+    .home .homeIntro .homeDiv {
+        width: 60%;
+    }
+
+    .home .homeIntro .tigerDiv {
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home .homeIntro .homeDiv {
+        margin-left: 10%;
+        margin-top: 15%;
+        width: 80%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
+    }
+    .home .homeIntro .tigerDiv {
+        height: 200px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+    }
+    .home .arrowButton {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+    }
 }

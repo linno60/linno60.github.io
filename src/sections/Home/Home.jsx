@@ -29,7 +29,7 @@ function Home() {
         <section ref={homeRef} id='homeContainer' className='home'>
             <div className='reserveTop' />
             <div className='homeIntro'>
-                <div className='HomeDiv'>
+                <div className='homeDiv'>
                     <p>I'm Lin</p>
                     <p>Working to become a great front-end developer</p>
                     <p>
