@@ -1,6 +1,5 @@
 .contact {
     height: calc(100vh * 0.93);
-    /* height: 100vh; */
 }
 
 .contact .contactTitle {
@@ -44,4 +43,17 @@
 
 .contact .contactCard .contactButton .mailButton {
     height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact .contactCard {
+        width: 60%;
+        margin: 7% auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact .contactCard {
+        width: 80%;
+    }
 }
