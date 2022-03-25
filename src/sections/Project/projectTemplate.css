@@ -1,0 +1,17 @@
+.projectTemplate {
+    display: flex;
+}
+
+.projectTemplate .projectImg {
+    width: 49%;
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    .projectTemplate {
+        display: block;
+    }
+    .projectTemplate .projectImg {
+        display: none;
+    }
+}

@@ -44,36 +44,14 @@ function Project() {
                 <Modal
                     isOpen={modalIsOpen}
                     onRequestClose={closeModal}
-                    style={{
-                        overlay: {
-                            position: 'fixed',
-                            top: 0,
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            backgroundColor: 'rgba(255, 255, 255, 0.75)',
-                        },
-                        content: {
-                            position: 'absolute',
-                            top: '20%',
-                            left: '15%',
-                            right: '15%',
-                            bottom: '20%',
-                            border: '1px solid #ccc',
-                            background: '#fff',
-                            overflow: 'auto',
-                            WebkitOverflowScrolling: 'touch',
-                            borderRadius: '25px',
-                            outline: 'none',
-                            padding: '20px',
-                        },
-                    }}
+                    className='projectModal'
+                    overlayClassName='modalOverlay'
                 >
-                    <div className='modalButton'>
-                        <button className='' onClick={closeModal}>
-                            <IoCloseOutline size={56} />
-                        </button>
-                    </div>
+                    {/* <div className='modalButton'> */}
+                    <button className='' onClick={closeModal}>
+                        <IoCloseOutline className='modalButton' />
+                    </button>
+                    {/* </div> */}
 
                     <div className='projectDetail'>
                         {ProjectData.filter(

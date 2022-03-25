@@ -29,19 +29,49 @@
     margin: 40px;
 }
 
+.projectModal {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    bottom: 20%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 25px;
+    outline: none;
+    padding: 20px;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
 .modalButton {
     position: absolute;
-    right: 15px;
+    top: 1%;
+    right: 1%;
+    font-size: 250%;
 }
 
 .projectDetail {
-    margin-top: 8%;
+    margin: 2%;
 }
 
 @media screen and (max-width: 768px) {
     .project .projectGalery img {
         width: 70%;
         margin: 10px;
+    }
+
+    .projectModal {
+        bottom: 40%;
     }
 }
 
@@ -58,5 +88,9 @@
     .project .projectGalery img {
         width: 80%;
         margin: 10px;
+    }
+
+    .projectModal {
+        bottom: 20%;
     }
 }
