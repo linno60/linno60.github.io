@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.930de02b.css",
+    "main.js": "/static/js/main.45579927.js",
+    "static/media/houseMarket.png": "/static/media/houseMarket.4ec965abcc289c985471.png",
+    "static/media/supportDesk.png": "/static/media/supportDesk.9eb3ef7e5616781b0431.png",
+    "static/media/feedbackApp.png": "/static/media/feedbackApp.9cd715b6c9caa78c2d71.png",
+    "static/media/githubFinder.png": "/static/media/githubFinder.0c49bbe66068ca549b5c.png",
+    "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
+    "static/media/backgroundImg.jpg": "/static/media/backgroundImg.65e06edc6e0c52c3e35b.jpg",
+    "static/media/leaflet.png": "/static/media/leaflet.75b27570fd2f9d323a13.png",
+    "static/media/node.png": "/static/media/node.c2e22c634a7336cbe298.png",
+    "static/media/mongoDB.png": "/static/media/mongoDB.b82ea6d47fcd389db2a4.png",
+    "static/media/css.png": "/static/media/css.e6d3493b68e1babcf1c0.png",
+    "static/media/html.png": "/static/media/html.a92a549a591f4acb527a.png",
+    "index.html": "/index.html",
+    "main.930de02b.css.map": "/static/css/main.930de02b.css.map",
+    "main.45579927.js.map": "/static/js/main.45579927.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.930de02b.css",
+    "static/js/main.45579927.js"
+  ]
+}
