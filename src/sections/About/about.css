@@ -73,6 +73,12 @@
         font-size: 1.3rem;
     }
 
+    .about .aboutDiv .thinkingGirl {
+        margin: auto;
+        width: 40%;
+        margin-top: 3%;
+    }
+
     .about .aboutSkills {
         margin-top: 5%;
         width: 90%;

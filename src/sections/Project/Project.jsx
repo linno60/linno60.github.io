@@ -29,17 +29,15 @@ function Project() {
             <div className='projectTitle'>Projects</div>
 
             <div className='projectGalery'>
-                <div className='projectList'>
-                    {ProjectData.map((project) => (
-                        <img
-                            onClick={openModal}
-                            src={project.screenshot}
-                            alt={project.title}
-                            className='shadow-lg transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...'
-                            key={project.title}
-                        />
-                    ))}
-                </div>
+                {ProjectData.map((project) => (
+                    <img
+                        onClick={openModal}
+                        src={project.screenshot}
+                        alt={project.title}
+                        className='shadow-lg transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...'
+                        key={project.title}
+                    />
+                ))}
             </div>
 
             <div className='modal'>

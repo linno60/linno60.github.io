@@ -13,21 +13,16 @@
 
 .project .projectGalery {
     width: 60%;
-    height: 60%;
-    margin: auto;
-}
-
-.project .projectGalery .projectList {
+    margin-left: 20%;
     background-color: #fff;
     border: solid #cfe2f3;
     border-radius: 25px;
     margin-top: 30px;
-    margin-bottom: 30px;
     display: inline-block;
     text-align: center;
 }
 
-.project .projectGalery .projectList img {
+.project .projectGalery img {
     width: 40%;
     height: auto;
     display: inline-block;
@@ -41,4 +36,27 @@
 
 .projectDetail {
     margin-top: 8%;
+}
+
+@media screen and (max-width: 768px) {
+    .project .projectGalery img {
+        width: 70%;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project .projectTitle {
+        font-size: 2rem;
+    }
+
+    .project .projectGalery {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .project .projectGalery img {
+        width: 80%;
+        margin: 10px;
+    }
 }
