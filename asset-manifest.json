@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.930de02b.css",
+    "main.css": "/static/css/main.51c02267.css",
     "main.js": "/static/js/main.45579927.js",
     "static/media/houseMarket.png": "/static/media/houseMarket.4ec965abcc289c985471.png",
     "static/media/supportDesk.png": "/static/media/supportDesk.9eb3ef7e5616781b0431.png",
@@ -14,11 +14,11 @@
     "static/media/css.png": "/static/media/css.e6d3493b68e1babcf1c0.png",
     "static/media/html.png": "/static/media/html.a92a549a591f4acb527a.png",
     "index.html": "/index.html",
-    "main.930de02b.css.map": "/static/css/main.930de02b.css.map",
+    "main.51c02267.css.map": "/static/css/main.51c02267.css.map",
     "main.45579927.js.map": "/static/js/main.45579927.js.map"
   },
   "entrypoints": [
-    "static/css/main.930de02b.css",
+    "static/css/main.51c02267.css",
     "static/js/main.45579927.js"
   ]
 }
