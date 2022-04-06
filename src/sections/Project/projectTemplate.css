@@ -7,6 +7,10 @@
     margin-right: 2%;
 }
 
+.projectContent {
+    width: 49%;
+}
+
 @media screen and (max-width: 768px) {
     .projectTemplate {
         display: block;

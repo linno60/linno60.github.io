@@ -15,6 +15,7 @@ import githubFinder from '../../assets/screenshots/githubFinder.png'
 import feedbackApp from '../../assets/screenshots/feedbackApp.png'
 
 import { FaGithub, FaLink } from 'react-icons/fa'
+import './projectData.css'
 
 const ProjectData = [
     {
@@ -23,19 +24,24 @@ const ProjectData = [
         description: (
             <div>
                 <p>
-                    The product of learning MERN stack. It allows user to
-                    create/view/close tickets of a chosen product.
+                    A support desk application allow users to
+                    create/submit/view/close tickets for a product using MERN
+                    stack.
                 </p>
             </div>
         ),
         links: [
             {
                 content: 'https://linsupportdesk.herokuapp.com/',
-                iconImage: <FaLink color='#6fa8dc' size={42} />,
+                iconImage: (
+                    <FaLink color='#6fa8dc' size={42} className='linkIcon' />
+                ),
             },
             {
                 content: 'https://github.com/linno60/support-desk-app',
-                iconImage: <FaGithub color='#171515' size={42} />,
+                iconImage: (
+                    <FaGithub color='#171515' size={42} className='linkIcon' />
+                ),
             },
         ],
         stacks: [
@@ -53,8 +59,8 @@ const ProjectData = [
         description: (
             <div>
                 <p>
-                    A project using Firebase. It allows user to buy/rent/sell
-                    their residence.
+                    A house trading market allow users to rent/buy/sell their
+                    property using React.js and Firebase.
                 </p>
             </div>
         ),
@@ -62,11 +68,15 @@ const ProjectData = [
             {
                 content:
                     'https://house-marketplace-project-linno60.vercel.app/',
-                iconImage: <FaLink color='#6fa8dc' size={42} />,
+                iconImage: (
+                    <FaLink color='#6fa8dc' size={42} className='linkIcon' />
+                ),
             },
             {
                 content: 'https://github.com/linno60/house-marketplace-project',
-                iconImage: <FaGithub color='#171515' size={42} />,
+                iconImage: (
+                    <FaGithub color='#171515' size={42} className='linkIcon' />
+                ),
             },
         ],
         stacks: [
@@ -82,19 +92,23 @@ const ProjectData = [
         description: (
             <div>
                 <p>
-                    A web app using GitHub API. Users can find a GiHub user with
-                    info.
+                    A search engine allow users to search GitHub profiles and
+                    see profile details using React.js and GitHub API.
                 </p>
             </div>
         ),
         links: [
             {
                 content: 'https://github-finder-linno60.vercel.app/',
-                iconImage: <FaLink color='#6fa8dc' size={42} />,
+                iconImage: (
+                    <FaLink color='#6fa8dc' size={42} className='linkIcon' />
+                ),
             },
             {
                 content: 'https://github.com/linno60/github-finder',
-                iconImage: <FaGithub color='#171515' size={42} />,
+                iconImage: (
+                    <FaGithub color='#171515' size={42} className='linkIcon' />
+                ),
             },
         ],
         stacks: [
@@ -110,19 +124,23 @@ const ProjectData = [
         description: (
             <div>
                 <p>
-                    A simple web app using React. Users can select ratings and
-                    write reviews.
+                    A feedback application allow users to give ratings and write
+                    reviews for the service using React.js.
                 </p>
             </div>
         ),
         links: [
             {
                 content: 'https://infallible-easley-2128aa.netlify.app/',
-                iconImage: <FaLink color='#6fa8dc' size={42} />,
+                iconImage: (
+                    <FaLink color='#6fa8dc' size={42} className='linkIcon' />
+                ),
             },
             {
                 content: 'https://github.com/linno60/feedback-app',
-                iconImage: <FaGithub color='#171515' size={42} />,
+                iconImage: (
+                    <FaGithub color='#171515' size={42} className='linkIcon' />
+                ),
             },
         ],
         stacks: [
