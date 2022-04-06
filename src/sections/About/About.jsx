@@ -15,16 +15,22 @@ function About() {
             <div className='aboutTitle'>About Me</div>
             <div className='aboutDiv'>
                 <div className='aboutMe'>
-                    <p>I was born in China and came to Canada when I was 15.</p>
-                    <br />
                     <p>
-                        I graduated from Simon Fraser University, major in
-                        Computer Science.
+                        I am a Web developer based in Vancouver with a passion
+                        for the latest technologies and building beautiful,
+                        accessible web applications.
                     </p>
                     <br />
                     <p>
-                        I love pretty, fancy stuff. This is probably why I like
-                        front-end.
+                        I am looking for a full-time opportunity right now and I
+                        am ready to meet a new challenge with my greatest
+                        enthusiasm and effort.
+                    </p>
+                    <br />
+                    <p>
+                        Take your time to browse my site, check out my projects
+                        and don't hesitate to reach me out if you have any
+                        questions for me.
                     </p>
                 </div>
                 <div className='thinkingGirl' ref={girl} />
