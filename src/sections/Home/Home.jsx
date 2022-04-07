@@ -31,7 +31,7 @@ function Home() {
             <div className='homeIntro'>
                 <div className='homeDiv'>
                     <p>I'm Lin</p>
-                    <p>Working to become a great front-end developer</p>
+                    <p>A web developer based in Vancouver</p>
                     <p>
                         I enjoy <span ref={el} />
                     </p>
