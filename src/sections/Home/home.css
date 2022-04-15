@@ -1,13 +1,21 @@
 .home {
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+#tsparticles {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
-.home .homeIntro {
+.homeIntro {
     display: flex;
-    margin-top: 7%;
+    padding-top: 54px;
 }
 
 .home .tigerDiv {

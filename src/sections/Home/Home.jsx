@@ -4,6 +4,7 @@ import arrow from '../../assets/lotties/arrow.json'
 import { useNav } from '../../hooks/useNav'
 import { useTyped } from '../../hooks/useTyped'
 import './home.css'
+import { ParticlesComponent } from '../../components/Particles'
 
 function Home() {
     const tigerAnimation = useLottie(tiger)
@@ -26,28 +27,30 @@ function Home() {
     const el = useTyped(strings)
 
     return (
-        <section ref={homeRef} id='homeContainer' className='home'>
-            <div className='reserveTop' />
-            <div className='homeIntro'>
-                <div className='homeDiv'>
-                    <p>I'm Lin</p>
-                    <p>A web developer based in Vancouver</p>
-                    <p>
-                        I enjoy <span ref={el} />
-                    </p>
+        <>
+            <ParticlesComponent />
+            <section ref={homeRef} id='homeContainer' className='home'>
+                <div className='homeIntro'>
+                    <div className='homeDiv'>
+                        <p>I'm Lin</p>
+                        <p>A web developer based in Vancouver</p>
+                        <p>
+                            I enjoy <span ref={el} />
+                        </p>
+                    </div>
+
+                    <div className='tigerDiv' ref={tigerAnimation} />
                 </div>
 
-                <div className='tigerDiv' ref={tigerAnimation} />
-            </div>
-
-            <div className='arrowButton'>
-                <button
-                    onClick={scrollToAbout}
-                    className='arrowDiv'
-                    ref={arrowAnimation}
-                />
-            </div>
-        </section>
+                <div className='arrowButton'>
+                    <button
+                        onClick={scrollToAbout}
+                        className='arrowDiv'
+                        ref={arrowAnimation}
+                    />
+                </div>
+            </section>
+        </>
     )
 }
 export default Home

@@ -5,10 +5,10 @@ import './nav.css'
 
 function Nav() {
     const navLinks = [
-        { navLinkId: 'Home', scrollToId: 'homeContainer' },
-        { navLinkId: 'About', scrollToId: 'aboutContainer' },
-        { navLinkId: 'Project', scrollToId: 'projectContainer' },
-        { navLinkId: 'Contact', scrollToId: 'contactContainer' },
+        { navLinkId: 'HOME', scrollToId: 'homeContainer' },
+        { navLinkId: 'ABOUT', scrollToId: 'aboutContainer' },
+        { navLinkId: 'PROJECT', scrollToId: 'projectContainer' },
+        { navLinkId: 'CONTACT', scrollToId: 'contactContainer' },
     ]
 
     const [smallScreen, setSmallScreen] = useState(false)
@@ -38,8 +38,6 @@ function Nav() {
     return (
         <nav>
             <div className='nav'>
-                <h1 className='websiteName'>Lin Liu</h1>
-
                 {/* Large Screen Navbar */}
                 <div className='navLinks'>
                     {navLinks.map(({ navLinkId, scrollToId }) => (
