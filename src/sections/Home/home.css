@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Roboto&display=swap');
+
 .home {
     height: 100vh;
     position: relative;
+    padding-top: 54px;
+    font-family: 'Patrick Hand SC', cursive;
 }
+
 #tsparticles {
     position: absolute;
     margin: 0;
@@ -13,69 +18,55 @@
     z-index: -1;
 }
 
-.homeIntro {
-    display: flex;
-    padding-top: 54px;
-}
-
-.home .tigerDiv {
-    height: 250px;
-    width: auto;
-}
-
-.home .homeDiv {
-    color: #977e56;
-    text-align: left;
-    margin-left: 20%;
-    width: 40%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-}
-
-.home .homeDiv > p {
-    padding: 0.5rem;
-}
-
-.home .arrowButton {
+.home .typedDiv {
     text-align: center;
-    margin-top: 2%;
+    position: relative;
+    top: 25%;
+}
+
+.home .homeTyped {
+    color: #e91f63;
+    white-space: nowrap;
+    font-size: 700%;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* typed.js cusor */
+.home .homeTyped + span {
+    color: #e91f63;
+    font-size: 700%;
 }
 
 .home .arrowDiv {
-    height: 150px;
-    width: auto;
-    margin-top: 3rem;
+    position: absolute;
+    bottom: 1%;
+    left: calc(50vw - (150px / 2));
+    width: 150px;
 }
 
 .home .arrowDiv:hover {
-    background-color: rgb(168 140 96 / 15%);
-    transform: scale(1.1);
+    background-color: rgb(233 31 99 / 15%);
+    transform: scale(1.05);
     border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
-    .home .homeIntro {
-        display: block;
+    .home .homeTyped {
+        font-size: 500%;
     }
-
-    .home .homeIntro .homeDiv {
-        width: 60%;
-    }
-
-    .home .homeIntro .tigerDiv {
-        margin-top: 5%;
+    .home .homeTyped + span {
+        color: #e91f63;
+        font-size: 500%;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .home .homeIntro .homeDiv {
-        margin-left: 10%;
-        margin-top: 15%;
-        width: 80%;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1.5rem;
+    .home .homeTyped {
+        font-size: 350%;
     }
-    .home .homeIntro .tigerDiv {
-        height: 150px;
+    .home .homeTyped + span {
+        color: #e91f63;
+        font-size: 350%;
     }
 }

@@ -10,8 +10,8 @@ export const useTyped = (strings) => {
     useEffect(() => {
         const options = {
             strings,
-            typeSpeed: 50,
-            backSpeed: 50,
+            typeSpeed: 40,
+            backSpeed: 30,
             loop: true,
         };
 
