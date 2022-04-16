@@ -13,15 +13,14 @@ function About() {
                     <p>
                         I am a Software Engineer based in Vancouver with a
                         passion for the latest technologies and building
-                        beautiful, accessible web applications. My skills
-                        include, but are not limited to: React.js, Redux/Redux
-                        Toolkit, JavasScript, Boostrap, Git&GitHub.
+                        beautiful, accessible web applications.
                     </p>
                     <br />
                     <p>
-                        I am looking for a full-time opportunity right now and I
-                        always wanted to meet new challenges with my greatest
-                        enthusiasm and effort.
+                        I am currently working on React personal projects and
+                        looking to move into a development role. My skills
+                        include, but are not limited to: React.js, Redux/Redux
+                        Toolkit, JavaScript, Bootstrap, Git&GitHub.
                     </p>
                     <br />
                     <p>
