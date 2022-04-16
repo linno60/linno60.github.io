@@ -13,9 +13,6 @@
 body {
     width: 100%;
     height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 @keyframes shrink {
@@ -52,9 +49,4 @@ body {
     to {
         transform: rotate(0deg);
     }
-}
-
-.reserveTop {
-    height: 64px;
-    visibility: hidden;
 }

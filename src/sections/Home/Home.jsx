@@ -1,13 +1,13 @@
 import { useLottie } from '../../hooks/useLottie'
-import flower from '../../assets/lotties/flower.json'
 import arrow from '../../assets/lotties/arrow.json'
 import { useNav } from '../../hooks/useNav'
 import { useTyped } from '../../hooks/useTyped'
 import './home.css'
 import { ParticlesComponent } from '../../components/Particles'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { GrMail } from 'react-icons/gr'
 
 function Home() {
-    const flowerAnimation = useLottie(flower)
     const arrowAnimation = useLottie(arrow)
 
     const homeRef = useNav('Home')
@@ -27,6 +27,34 @@ function Home() {
             <section ref={homeRef} id='homeContainer' className='home'>
                 <div className='typedDiv'>
                     <span className='homeTyped' ref={el} />
+                </div>
+                <div className='contactLinks'>
+                    <a
+                        href='https://www.linkedin.com/in/lin-liu-224167145/'
+                        aria-label='linkedin link'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        <FaLinkedin className='contactIcon' size={42} />
+                    </a>
+
+                    <a
+                        href='https://github.com/linno60/'
+                        aria-label='github link'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        <FaGithub className='contactIcon' size={42} />
+                    </a>
+
+                    <button
+                        onClick={(e) => {
+                            window.location.href = 'mailto:liulinn60@gmail.com'
+                            e.preventDefault()
+                        }}
+                    >
+                        <GrMail className='contactIcon' size={42} />
+                    </button>
                 </div>
 
                 <button

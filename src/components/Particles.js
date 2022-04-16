@@ -24,7 +24,7 @@ export const ParticlesComponent = () => {
                     zIndex: -1
                 },
                 particles: {
-                    color: { value: ["#e91f63", "BFC2CB"] },
+                    color: { value: ["#e91f63", "#BFC2CB"] },
                     move: {
                         direction: "none",
                         enable: true,
@@ -38,7 +38,7 @@ export const ParticlesComponent = () => {
                             enable: true,
                             area: 800
                         },
-                        value: 200
+                        value: 300
                     },
                     opacity: {
                         value: 0.6
@@ -47,7 +47,7 @@ export const ParticlesComponent = () => {
                         type: "star"
                     },
                     size: {
-                        value: { min: 0.5, max: 3 },
+                        value: { min: 0.5, max: 3.5 },
                         animation: {
                             enable: true,
                             minimumValue: 0,

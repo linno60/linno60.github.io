@@ -1,29 +1,26 @@
 import { useNav } from '../../hooks/useNav'
-import { useLottie } from '../../hooks/useLottie'
-import thinkingGirl from '../../assets/lotties/thinkingGirl.json'
-import Skills from './Skills'
+import Skills from '../../components/SkillTagCloud'
 import './about.css'
 
 function About() {
     const aboutRef = useNav('Home')
 
-    const girl = useLottie(thinkingGirl)
-
     return (
         <section ref={aboutRef} id='aboutContainer' className='about'>
-            <div className='reserveTop' />
-            <div className='aboutTitle'>About Me</div>
             <div className='aboutDiv'>
                 <div className='aboutMe'>
+                    <h1>Hi! I'm Lin</h1>
                     <p>
-                        I am a Web developer based in Vancouver with a passion
-                        for the latest technologies and building beautiful,
-                        accessible web applications.
+                        I am a Software Engineer based in Vancouver with a
+                        passion for the latest technologies and building
+                        beautiful, accessible web applications. My skills
+                        include, but are not limited to: React.js, Redux/Redux
+                        Toolkit, JavasScript, Boostrap, Git&GitHub.
                     </p>
                     <br />
                     <p>
                         I am looking for a full-time opportunity right now and I
-                        am ready to meet a new challenge with my greatest
+                        always wanted to meet new challenges with my greatest
                         enthusiasm and effort.
                     </p>
                     <br />
@@ -33,10 +30,9 @@ function About() {
                         questions for me.
                     </p>
                 </div>
-                <div className='thinkingGirl' ref={girl} />
-            </div>
-            <div className='aboutSkills'>
-                <Skills />
+                <div className='skillTagCloud'>
+                    <Skills />
+                </div>
             </div>
         </section>
     )
