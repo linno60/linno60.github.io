@@ -47,6 +47,7 @@
 .contactIcon {
     margin: 10px;
     color: #515357;
+    transition: all 1s ease;
 }
 
 .contactIcon:hover {

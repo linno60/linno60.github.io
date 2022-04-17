@@ -1,4 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
+
+import Loading from './sections/Loading/Loading'
 import Nav from "./sections/Nav/Nav"
 import Home from './sections/Home/Home'
 import About from "./sections/About/About"
@@ -10,14 +12,16 @@ import { NavProvider } from './context/NavContext';
 function App() {
   return (
     <>
-      <NavProvider>
-        <Nav />
-        <Home />
-        <About />
-        <Project />
-        <Contact />
-      </NavProvider>
-      <Footer />
+      <Suspense fallback={<Loading />}>
+        <NavProvider>
+          <Nav />
+          <Home />
+          <About />
+          <Project />
+          <Contact />
+        </NavProvider>
+        <Footer />
+      </Suspense>
     </>
   )
 }
