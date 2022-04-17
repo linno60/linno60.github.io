@@ -25,8 +25,7 @@ function Project() {
 
     return (
         <section ref={projectRef} id='projectContainer' className='project'>
-            <div className='reserveTop' />
-            <div className='projectTitle'>Projects</div>
+            <h1>Projects</h1>
 
             <div className='projectGalery'>
                 {ProjectData.map((project) => (
