@@ -1,17 +1,54 @@
 .contact {
-    height: calc(100vh * 0.93);
+    height: 100vh;
+    width: 100vw;
+    background-color: #f3f4f3;
 }
 
 .contact .contactTitle {
     text-align: center;
-    margin-top: 30px;
-    color: #a86860;
-    font-family: 'Open Sans', sans-serif;
+    color: #e91f63;
     font-size: 3rem;
-    font-weight: bolder;
+    padding-top: 54px;
+    font-weight: bold;
 }
 
-.contact .contactCard {
+.contact .contactWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.contact .contactWrapper .contactLinks {
+    display: block;
+    width: 50%;
+    text-align: center;
+}
+
+.contact img {
+    border-radius: 50%;
+    height: 10rem;
+    margin: auto;
+}
+
+.contact a {
+    display: flex;
+    /* background-color: aquamarine; */
+}
+
+.contact a .contactIcon {
+    margin: auto;
+}
+
+.contact button {
+    display: flex;
+    margin: auto;
+}
+
+.contact form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* .contact .contactCard {
     width: 30%;
     height: 30%;
     margin: 2% auto;
@@ -59,4 +96,4 @@
     .contact .contactCard {
         width: 80%;
     }
-}
+} */

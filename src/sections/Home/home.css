@@ -1,8 +1,8 @@
 .home {
     height: 100vh;
+    width: 100vw;
     position: relative;
     padding-top: 54px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 #tsparticles {
@@ -69,20 +69,20 @@
 
 @media screen and (max-width: 768px) {
     .home .homeTyped {
-        font-size: 450%;
+        font-size: 400%;
     }
     .home .homeTyped + span {
         color: #e91f63;
-        font-size: 450%;
+        font-size: 400%;
     }
 }
 
 @media screen and (max-width: 480px) {
     .home .homeTyped {
-        font-size: 350%;
+        font-size: 230%;
     }
     .home .homeTyped + span {
         color: #e91f63;
-        font-size: 350%;
+        font-size: 230%;
     }
 }

@@ -8,7 +8,10 @@ function About() {
     return (
         <section ref={aboutRef} id='aboutContainer' className='about'>
             <div className='aboutDiv'>
-                <div className='aboutMe'>
+                <div
+                    className='aboutMe aos-init aos-animate'
+                    data-aos='fade-right'
+                >
                     <h1>Hi! I'm Lin</h1>
                     <p>
                         I am a Software Engineer based in Vancouver with a
@@ -29,7 +32,10 @@ function About() {
                         questions for me.
                     </p>
                 </div>
-                <div className='skillTagCloud'>
+                <div
+                    className='skillTagCloud aos-init aos-animate'
+                    data-aos='fade-left'
+                >
                     <Skills />
                 </div>
             </div>

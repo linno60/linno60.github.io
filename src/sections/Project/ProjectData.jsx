@@ -15,33 +15,41 @@ import githubFinder from '../../assets/screenshots/githubFinder.png'
 import feedbackApp from '../../assets/screenshots/feedbackApp.png'
 
 import { FaGithub, FaLink } from 'react-icons/fa'
-import './projectData.css'
+import './project.css'
 
 const ProjectData = [
     {
-        title: 'Support Desk App',
+        title: <h2>Support Desk</h2>,
         screenshot: supportDesk,
         description: (
-            <div>
-                <p>
-                    A support desk application allow users to
-                    create/submit/view/close tickets for a product using MERN
-                    stack.
-                </p>
+            <div className='dataDescription'>
+                <ul>
+                    <li>
+                        A support desk web application that allows user to
+                        create and manage tickets for electronic devices using
+                        MongoDB, Express.js, React.js and Node.js
+                    </li>
+                    <li>
+                        Applied Redux Toolkit to manage the state of user
+                        authentication, tickets and notes, Axios for HTTP
+                        Client, Mongoose for the creation of data models, and
+                        JSON Web Token for secure data transmission
+                    </li>
+                    <li>
+                        Utilized Postman for API testing of users, tickets and
+                        notes
+                    </li>
+                </ul>
             </div>
         ),
         links: [
             {
                 content: 'https://linsupportdesk.herokuapp.com/',
-                iconImage: (
-                    <FaLink color='#6fa8dc' size={42} className='linkIcon' />
-                ),
+                iconImage: <FaLink size={42} className='linkIcon' />,
             },
             {
                 content: 'https://github.com/linno60/support-desk-app',
-                iconImage: (
-                    <FaGithub color='#171515' size={42} className='linkIcon' />
-                ),
+                iconImage: <FaGithub size={42} className='linkIcon' />,
             },
         ],
         stacks: [
@@ -54,29 +62,39 @@ const ProjectData = [
     },
 
     {
-        title: 'House Market Project',
+        title: 'House Market',
         screenshot: houseMarket,
         description: (
-            <div>
-                <p>
-                    A house trading market allow users to rent/buy/sell their
-                    property using React.js and Firebase.
-                </p>
+            <div className='dataDescription'>
+                <ul>
+                    <li>
+                        A house trading market web application that allows user
+                        to rent/buy/sell their property using React.js and
+                        Firebase
+                    </li>
+                    <li>
+                        Fulfilled sign up, single sign-on with Google account,
+                        and send password reset email using Firebase
+                        Authentication, and stored data of users and property
+                        listings using Firebase Firestore Database
+                    </li>
+                    <li>
+                        Used React packages, such as Leaflet to show location on
+                        map, Swiper to demonstrate image slider of houses, and
+                        React-Toastify to display notifications
+                    </li>
+                </ul>
             </div>
         ),
         links: [
             {
                 content:
                     'https://house-marketplace-project-linno60.vercel.app/',
-                iconImage: (
-                    <FaLink color='#6fa8dc' size={42} className='linkIcon' />
-                ),
+                iconImage: <FaLink size={42} className='linkIcon' />,
             },
             {
                 content: 'https://github.com/linno60/house-marketplace-project',
-                iconImage: (
-                    <FaGithub color='#171515' size={42} className='linkIcon' />
-                ),
+                iconImage: <FaGithub size={42} className='linkIcon' />,
             },
         ],
         stacks: [
@@ -90,25 +108,33 @@ const ProjectData = [
         title: 'Github Finder',
         screenshot: githubFinder,
         description: (
-            <div>
-                <p>
-                    A search engine allow users to search GitHub profiles and
-                    see profile details using React.js and GitHub API.
-                </p>
+            <div className='dataDescription'>
+                <ul>
+                    <li>
+                        A search engine that lets the user to search GitHub
+                        profiles and see profile details using React.js and
+                        GitHub API
+                    </li>
+                    <li>
+                        Used react packages, such as tailwindCSS, daisyUI,
+                        react-icons to develop and implement frontend components
+                    </li>
+                    <li>
+                        Designed a responsive web to optimize the appearance of
+                        the site depending on the screen size such as for
+                        desktops, tablets and mobiles
+                    </li>
+                </ul>
             </div>
         ),
         links: [
             {
                 content: 'https://github-finder-linno60.vercel.app/',
-                iconImage: (
-                    <FaLink color='#6fa8dc' size={42} className='linkIcon' />
-                ),
+                iconImage: <FaLink size={42} className='linkIcon' />,
             },
             {
                 content: 'https://github.com/linno60/github-finder',
-                iconImage: (
-                    <FaGithub color='#171515' size={42} className='linkIcon' />
-                ),
+                iconImage: <FaGithub size={42} className='linkIcon' />,
             },
         ],
         stacks: [
@@ -119,28 +145,34 @@ const ProjectData = [
     },
 
     {
-        title: 'Feedback App',
+        title: 'Feedback',
         screenshot: feedbackApp,
         description: (
-            <div>
-                <p>
-                    A feedback application allow users to give ratings and write
-                    reviews for the service using React.js.
-                </p>
+            <div className='dataDescription'>
+                <ul>
+                    <li>
+                        A feedback application that allows user to rate and
+                        review the service using React.js
+                    </li>
+                    <li>
+                        Included edit and delete such that user can manage
+                        existing reviews and return a new average rating
+                    </li>
+                    <li>
+                        Used React Router Dom for routing and Framer Motion for
+                        the animation of adding and removing a review
+                    </li>
+                </ul>
             </div>
         ),
         links: [
             {
                 content: 'https://infallible-easley-2128aa.netlify.app/',
-                iconImage: (
-                    <FaLink color='#6fa8dc' size={42} className='linkIcon' />
-                ),
+                iconImage: <FaLink size={42} className='linkIcon' />,
             },
             {
                 content: 'https://github.com/linno60/feedback-app',
-                iconImage: (
-                    <FaGithub color='#171515' size={42} className='linkIcon' />
-                ),
+                iconImage: <FaGithub size={42} className='linkIcon' />,
             },
         ],
         stacks: [

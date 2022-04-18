@@ -20,6 +20,7 @@ import {
     siNodedotjs,
     siNpm,
     siStyledcomponents,
+    siFramer,
 } from 'simple-icons/icons'
 import { Cloud, renderSimpleIcon } from 'react-icon-cloud'
 
@@ -45,6 +46,7 @@ const icons = [
     siNodedotjs,
     siNpm,
     siStyledcomponents,
+    siFramer,
 ]
 
 const makeProps = () => ({
