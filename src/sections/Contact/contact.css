@@ -22,7 +22,7 @@
 .contact .contactLeft {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .contact img {
@@ -39,7 +39,7 @@
 
 .contact .contactLinks {
     position: relative;
-    top: 0;
+    top: 15px;
 }
 
 .contact .contactIcon {
@@ -54,13 +54,10 @@
 
 .contact .mailButton {
     position: relative;
-    top: -2%;
+    top: 10px;
     width: 25%;
     height: auto;
     margin: auto;
-}
-
-.contact .contactForm {
 }
 
 /* @media screen and (max-width: 768px) {
