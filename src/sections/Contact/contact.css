@@ -1,7 +1,7 @@
 .contact {
-    height: 100vh;
-    width: 100vw;
+    height: calc(100vh - 54px);
     background-color: #f3f4f3;
+    width: 100%;
 }
 
 .contact .contactTitle {
@@ -12,77 +12,58 @@
     font-weight: bold;
 }
 
-.contact .contactWrapper {
+.contact .contactAll {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin: 3% auto;
 }
 
-.contact .contactWrapper .contactLinks {
-    display: block;
-    width: 50%;
-    text-align: center;
+.contact .contactLeft {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
 }
 
 .contact img {
     border-radius: 50%;
     height: 10rem;
+    width: 10rem;
     margin: auto;
-}
-
-.contact a {
-    display: flex;
-    /* background-color: aquamarine; */
-}
-
-.contact a .contactIcon {
-    margin: auto;
-}
-
-.contact button {
-    display: flex;
-    margin: auto;
-}
-
-.contact form {
-    width: 50%;
-    margin: 0 auto;
-}
-
-/* .contact .contactCard {
-    width: 30%;
-    height: 30%;
-    margin: 2% auto;
-    background-color: #fff;
-    border: solid #cfe2f3;
-    border-radius: 25px;
-}
-
-.contact .contactCard .contactInfo {
-    text-align: center;
-}
-
-.contact .contactLinks {
-    display: flex;
-    justify-content: center;
-}
-
-.contact .contactLinks a {
-    margin: 10% 5% 3% 5%;
-}
-
-.contact .contactLinks .contactIcon {
     animation: spinOut 0.2s;
 }
 
-.contact .contactLinks .contactIcon:hover {
+.contact img:hover {
     animation: spinIn 0.2s;
 }
 
-.contact .contactCard .contactButton .mailButton {
-    height: 100px;
+.contact .contactLinks {
+    position: relative;
+    top: 0;
 }
 
-@media screen and (max-width: 768px) {
+.contact .contactIcon {
+    animation: spinOut 0.2s;
+    margin: 10px;
+    color: #515357;
+}
+
+.contact .contactIcon:hover {
+    animation: spinIn 0.2s;
+}
+
+.contact .mailButton {
+    position: relative;
+    top: -2%;
+    width: 25%;
+    height: auto;
+    margin: auto;
+}
+
+.contact .contactForm {
+}
+
+/* @media screen and (max-width: 768px) {
     .contact .contactCard {
         width: 60%;
         margin: 7% auto;
@@ -96,4 +77,4 @@
     .contact .contactCard {
         width: 80%;
     }
-} */
+}  */

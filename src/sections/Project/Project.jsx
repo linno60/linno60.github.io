@@ -8,6 +8,7 @@ function Project() {
 
     return (
         <section ref={projectRef} id='projectContainer' className='project'>
+            <hr class='solid'></hr>
             <h1>My Projects</h1>
 
             {ProjectData.map((project) => (

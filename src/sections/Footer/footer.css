@@ -1,7 +1,6 @@
 footer {
-    height: calc(100vh * 0.07);
-    font-family: 'Open Sans', sans-serif;
-    width: 100;
+    width: 100%;
+    background-color: #f3f4f3;
 }
 
 .footerDetail {

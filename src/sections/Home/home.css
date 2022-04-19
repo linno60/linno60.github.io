@@ -1,6 +1,6 @@
 .home {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     padding-top: 54px;
 }
@@ -44,13 +44,13 @@
     z-index: 1;
 }
 
-.contactIcon {
+.home .contactIcon {
     margin: 10px;
     color: #515357;
     transition: all 1s ease;
 }
 
-.contactIcon:hover {
+.home .contactIcon:hover {
     color: #e91f63;
 }
 
