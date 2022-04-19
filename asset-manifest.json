@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.daa0141c.css",
-    "main.js": "/static/js/main.ad064671.js",
+    "main.css": "/static/css/main.dfe90019.css",
+    "main.js": "/static/js/main.803c6d5e.js",
     "static/media/houseMarket.png": "/static/media/houseMarket.4ec965abcc289c985471.png",
     "static/media/supportDesk.png": "/static/media/supportDesk.9eb3ef7e5616781b0431.png",
     "static/media/feedbackApp.png": "/static/media/feedbackApp.9cd715b6c9caa78c2d71.png",
+    "static/media/cat.png": "/static/media/cat.753f1267058a0f33a93b.png",
     "static/media/githubFinder.png": "/static/media/githubFinder.0c49bbe66068ca549b5c.png",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/leaflet.png": "/static/media/leaflet.75b27570fd2f9d323a13.png",
@@ -12,12 +13,13 @@
     "static/media/mongoDB.png": "/static/media/mongoDB.b82ea6d47fcd389db2a4.png",
     "static/media/css.png": "/static/media/css.e6d3493b68e1babcf1c0.png",
     "static/media/html.png": "/static/media/html.a92a549a591f4acb527a.png",
+    "static/media/loadingIcon.svg": "/static/media/loadingIcon.b60fe7b6cb0da9f130c6ba12c4d68af2.svg",
     "index.html": "/index.html",
-    "main.daa0141c.css.map": "/static/css/main.daa0141c.css.map",
-    "main.ad064671.js.map": "/static/js/main.ad064671.js.map"
+    "main.dfe90019.css.map": "/static/css/main.dfe90019.css.map",
+    "main.803c6d5e.js.map": "/static/js/main.803c6d5e.js.map"
   },
   "entrypoints": [
-    "static/css/main.daa0141c.css",
-    "static/js/main.ad064671.js"
+    "static/css/main.dfe90019.css",
+    "static/js/main.803c6d5e.js"
   ]
 }
