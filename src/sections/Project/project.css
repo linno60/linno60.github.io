@@ -26,15 +26,6 @@
     color: #333333;
 }
 
-@media screen and (max-width: 768px) {
-    .projectTemplate {
-        display: block;
-    }
-    .projectTemplate .projectImg {
-        display: none;
-    }
-}
-
 /* Project Data */
 .dataDescription li {
     list-style-type: circle;
@@ -66,4 +57,27 @@
     padding-top: 54px;
     font-weight: bold;
     position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .projectTemplate {
+        flex-direction: column;
+    }
+
+    .projectTemplate .projectContent {
+        width: 80%;
+        text-align: center;
+        padding: 5% 10% 2.5% 10%;
+    }
+
+    .dataDescription li {
+        position: relative;
+        left: 0;
+    }
+
+    .projectTemplate .projectImg {
+        width: 60%;
+        padding: 0;
+        margin: 3% auto;
+    }
 }

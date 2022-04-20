@@ -14,23 +14,30 @@
 
 .contact .contactAll {
     display: flex;
-    justify-content: space-around;
-    width: 70%;
-    margin: 3% auto;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .contact .contactLeft {
     display: flex;
     flex-direction: column;
-    margin-top: 3%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .contactImg {
+    width: 30%;
+    margin: 0 auto;
 }
 
 .contact img {
     border-radius: 50%;
-    height: 10rem;
-    width: 10rem;
-    margin: auto;
     animation: spinOut 0.2s;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .contact img:hover {
@@ -38,8 +45,8 @@
 }
 
 .contact .contactLinks {
-    position: relative;
-    top: 15px;
+    display: flex;
+    margin: 0 auto;
 }
 
 .contact .contactIcon {
@@ -53,25 +60,42 @@
 }
 
 .contact .mailButton {
-    position: relative;
-    top: 10px;
     width: 25%;
     height: auto;
-    margin: auto;
+    margin: 0 auto;
 }
 
-/* @media screen and (max-width: 768px) {
-    .contact .contactCard {
-        width: 60%;
-        margin: 7% auto;
-    }
+.contact .smallScreenEmail {
+    display: none;
 }
 
-@media screen and (max-width: 480px) {
-    .contact .contactTitle {
-        font-size: 2rem;
+.contact .contactForm {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        min-height: 100vh;
     }
-    .contact .contactCard {
+
+    .contact .contactAll {
+        flex-direction: column;
+    }
+
+    .contact .contactLeft {
         width: 80%;
+        margin: 2% auto 0 auto;
     }
-}  */
+
+    .contact .mailButton {
+        display: none;
+    }
+
+    .contact .smallScreenEmail {
+        display: flex;
+    }
+
+    .contact .contactForm {
+        margin: 5% auto 0 auto;
+    }
+}

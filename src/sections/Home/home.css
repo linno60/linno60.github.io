@@ -25,18 +25,20 @@
 .home .homeTyped {
     color: #e91f63;
     white-space: nowrap;
-    font-size: 700%;
-    font-weight: 900;
+    font-size: 6rem;
+    font-weight: 700;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
 }
 
 /* typed.js cusor */
 .home .homeTyped + span {
     color: #e91f63;
-    font-size: 700%;
+    font-size: 6rem;
 }
 
-.contactLinks {
+.home .contactLinks {
     display: flex;
     justify-content: center;
     position: relative;
@@ -67,22 +69,33 @@
     border-radius: 50%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .home .homeTyped {
-        font-size: 400%;
+        font-size: 5rem;
+        font-weight: 600;
     }
     .home .homeTyped + span {
         color: #e91f63;
-        font-size: 400%;
+        font-size: 5rem;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .home .homeTyped {
-        font-size: 230%;
+        font-size: 4rem;
     }
     .home .homeTyped + span {
         color: #e91f63;
-        font-size: 230%;
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home .homeTyped {
+        font-size: 3rem;
+    }
+    .home .homeTyped + span {
+        color: #e91f63;
+        font-size: 3rem;
     }
 }

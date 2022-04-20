@@ -6,6 +6,7 @@ import './contact.css'
 import { GrMail } from 'react-icons/gr'
 import cat from '../../assets/images/cat.png'
 import ContactForm from '../../components/ContactForm/ContactForm'
+import ButtonMailTo from '../../components/ButtonMailTo'
 
 function Contact() {
     const contactRef = useNav('Home')
@@ -24,7 +25,9 @@ function Contact() {
                     className='contactLeft aos-init aos-animate'
                     data-aos='fade-up'
                 >
-                    <img src={cat} alt='cat' />
+                    <figure className='contactImg'>
+                        <img src={cat} alt='cat' />
+                    </figure>
                     <div className='contactLinks'>
                         <a
                             href='https://github.com/linno60/'
@@ -43,6 +46,18 @@ function Contact() {
                         >
                             <FaLinkedin className='contactIcon' size={42} />
                         </a>
+                        <button
+                            onClick={(e) => {
+                                window.location.href =
+                                    'mailto:liulinn60@gmail.com'
+                                e.preventDefault()
+                            }}
+                        >
+                            <GrMail
+                                className='contactIcon smallScreenEmail'
+                                size={42}
+                            />
+                        </button>
                     </div>
                     <div className='mailButton'>
                         <button onClick={mailTo} ref={sayHiAnimation} />
@@ -53,7 +68,7 @@ function Contact() {
                     className='contactForm aos-init aos-animate'
                     data-aos='fade-up'
                 >
-                    <ContactForm className='contactForm' />
+                    <ContactForm />
                 </div>
             </div>
         </section>
