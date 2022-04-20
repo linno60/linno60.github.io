@@ -26,8 +26,8 @@ const ProjectTemplate = (props) => {
                     {title && <h2>{title}</h2>}
 
                     {stacks && (
-                        <div className='mt-4'>
-                            <ul className='mt-4'>
+                        <div>
+                            <ul className='stackUsed'>
                                 {stacks.map((stack) => (
                                     <li
                                         key={stack.content}
@@ -37,7 +37,6 @@ const ProjectTemplate = (props) => {
                                         <img
                                             src={stack.iconImage}
                                             alt='stack Used'
-                                            className='h-10 mx-5'
                                             data-tooltip-target='tooltip-default'
                                         />
                                     </li>
@@ -46,11 +45,7 @@ const ProjectTemplate = (props) => {
                         </div>
                     )}
 
-                    {description && (
-                        <div className='mt-4 font-sans text-lg'>
-                            {description}
-                        </div>
-                    )}
+                    {description && <div>{description}</div>}
 
                     {links && (
                         <div className='mt-5'>
@@ -60,7 +55,7 @@ const ProjectTemplate = (props) => {
                                     href={link.content}
                                     target='_blank'
                                     rel='noreferrer'
-                                    className='mx-5 display: inline-block'
+                                    className='links'
                                 >
                                     {link.iconImage}
                                 </a>

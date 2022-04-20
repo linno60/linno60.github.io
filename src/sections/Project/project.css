@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-
 /* Project Template */
 .projectTemplate {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: 2.5% auto;
 }
 
 .projectTemplate h2 {
@@ -14,16 +14,30 @@
     text-shadow: 2px 2px rgba(51, 51, 51, 0.3);
 }
 
+.projectTemplate .projectContent .stackUsed {
+    margin-top: 1rem;
+}
+
+.projectTemplate .projectContent .stackUsed img {
+    height: 2.5rem;
+    margin: auto 1.25rem;
+}
+
 .projectTemplate .projectImg {
     width: 50%;
-    padding: 5% 10% 2.5% 2.5%;
+    padding-left: 2.5%;
 }
 
 .projectContent {
     width: 50%;
-    padding: 5% 2.5% 2.5% 10%;
+    padding-right: 2.5%;
     text-align: left;
     color: #333333;
+}
+
+.projectTemplate .projectContent .links {
+    margin: auto 1.25rem;
+    display: inline-block;
 }
 
 /* Project Data */
@@ -32,7 +46,12 @@
     text-align: left;
     position: relative;
     left: 2.5%;
-    font-family: 'Poppins', sans-serif;
+}
+
+.dataDescription p {
+    font-size: 1.3rem;
+    line-height: 1.95rem;
+    margin: 1rem auto;
 }
 
 .linkIcon {
@@ -65,9 +84,8 @@
     }
 
     .projectTemplate .projectContent {
-        width: 80%;
+        width: 100%;
         text-align: center;
-        padding: 5% 10% 2.5% 10%;
     }
 
     .dataDescription li {
@@ -79,5 +97,13 @@
         width: 60%;
         padding: 0;
         margin: 3% auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dataDescription p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 1rem auto;
     }
 }

@@ -62,7 +62,6 @@
     transition: 0.3s;
     width: max-content;
     display: flex;
-    margin: auto;
     margin-top: 5%;
     transition: all 0.3s ease-in-out;
 }
@@ -90,5 +89,15 @@
 
     .contact-form textarea {
         width: 470px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form input {
+        width: 200%;
+    }
+
+    .contact-form textarea {
+        width: 200%;
     }
 }

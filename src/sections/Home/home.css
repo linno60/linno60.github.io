@@ -92,10 +92,10 @@
 
 @media screen and (max-width: 576px) {
     .home .homeTyped {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .home .homeTyped + span {
         color: #e91f63;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }

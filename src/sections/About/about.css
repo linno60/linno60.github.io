@@ -6,14 +6,18 @@
 .aboutDiv {
     padding-top: calc(54px + 5%);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
 }
 
 .aboutMe {
     text-align: left;
     width: 55%;
     color: #333333;
-    font-size: 1.5rem;
-    padding: 0 0 0 10%;
+    font-size: 1.3rem;
+    line-height: 1.95rem;
 }
 
 .aboutDiv h1 {
@@ -27,22 +31,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    padding: 0 10% 0 auto;
+    width: 45%;
 }
 
 @media screen and (max-width: 768px) {
     .about .aboutDiv {
-        display: block;
+        flex-direction: column;
     }
 
     .about .aboutDiv .aboutMe {
-        width: 80%;
-        margin: auto;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .skillTagCloud {
         margin: auto;
-        width: 60%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about .aboutDiv .aboutMe {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 0;
+        width: 100%;
     }
 }

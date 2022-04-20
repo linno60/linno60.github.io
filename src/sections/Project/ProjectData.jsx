@@ -25,19 +25,25 @@ const ProjectData = [
             <div className='dataDescription'>
                 <ul>
                     <li>
-                        A support desk web application that allows user to
-                        create and manage tickets for electronic devices using
-                        MongoDB, Express.js, React.js and Node.js
+                        <p>
+                            A support desk web application that allows user to
+                            create and manage tickets for electronic devices
+                            using MongoDB, Express.js, React.js and Node.js
+                        </p>
                     </li>
                     <li>
-                        Applied Redux Toolkit to manage the state of user
-                        authentication, tickets and notes, Axios for HTTP
-                        Client, Mongoose for the creation of data models, and
-                        JSON Web Token for secure data transmission
+                        <p>
+                            Applied Redux Toolkit to manage the state of user
+                            authentication, tickets and notes, Axios for HTTP
+                            Client, Mongoose for the creation of data models,
+                            and JSON Web Token for secure data transmission
+                        </p>
                     </li>
                     <li>
-                        Utilized Postman for API testing of users, tickets and
-                        notes
+                        <p>
+                            Utilized Postman for API testing of users, tickets
+                            and notes
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -68,20 +74,28 @@ const ProjectData = [
             <div className='dataDescription'>
                 <ul>
                     <li>
-                        A house trading market web application that allows user
-                        to rent/buy/sell their property using React.js and
-                        Firebase
+                        <p>
+                            A house trading market web application that allows
+                            user to rent/buy/sell their property using React.js
+                            and Firebase
+                        </p>
                     </li>
                     <li>
-                        Fulfilled sign up, single sign-on with Google account,
-                        and send password reset email using Firebase
-                        Authentication, and stored data of users and property
-                        listings using Firebase Firestore Database
+                        <p>
+                            Fulfilled sign up, single sign-on with Google
+                            account, and send password reset email using
+                            Firebase Authentication, and stored data of users
+                            and property listings using Firebase Firestore
+                            Database
+                        </p>
                     </li>
                     <li>
-                        Used React packages, such as Leaflet to show location on
-                        map, Swiper to demonstrate image slider of houses, and
-                        React-Toastify to display notifications
+                        <p>
+                            Used React packages, such as Leaflet to show
+                            location on map, Swiper to demonstrate image slider
+                            of houses, and React-Toastify to display
+                            notifications
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -111,18 +125,25 @@ const ProjectData = [
             <div className='dataDescription'>
                 <ul>
                     <li>
-                        A search engine that lets the user to search GitHub
-                        profiles and see profile details using React.js and
-                        GitHub API
+                        <p>
+                            A search engine that lets the user to search GitHub
+                            profiles and see profile details using React.js and
+                            GitHub API
+                        </p>
                     </li>
                     <li>
-                        Used react packages, such as tailwindCSS, daisyUI,
-                        react-icons to develop and implement frontend components
+                        <p>
+                            Used react packages, such as tailwindCSS, daisyUI,
+                            react-icons to develop and implement frontend
+                            components
+                        </p>
                     </li>
                     <li>
-                        Designed a responsive web to optimize the appearance of
-                        the site depending on the screen size such as for
-                        desktops, tablets and mobiles
+                        <p>
+                            Designed a responsive web to optimize the appearance
+                            of the site depending on the screen size such as for
+                            desktops, tablets and mobiles
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -151,16 +172,22 @@ const ProjectData = [
             <div className='dataDescription'>
                 <ul>
                     <li>
-                        A feedback application that allows user to rate and
-                        review the service using React.js
+                        <p>
+                            A feedback application that allows user to rate and
+                            review the service using React.js
+                        </p>
                     </li>
                     <li>
-                        Included edit and delete such that user can manage
-                        existing reviews and return a new average rating
+                        <p>
+                            Included edit and delete such that user can manage
+                            existing reviews and return a new average rating
+                        </p>
                     </li>
                     <li>
-                        Used React Router Dom for routing and Framer Motion for
-                        the animation of adding and removing a review
+                        <p>
+                            Used React Router Dom for routing and Framer Motion
+                            for the animation of adding and removing a review
+                        </p>
                     </li>
                 </ul>
             </div>
