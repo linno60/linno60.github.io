@@ -6,7 +6,6 @@ import './contact.css'
 import { GrMail } from 'react-icons/gr'
 import cat from '../../assets/images/cat.png'
 import ContactForm from '../../components/ContactForm/ContactForm'
-import ButtonMailTo from '../../components/ButtonMailTo'
 
 function Contact() {
     const contactRef = useNav('Home')
