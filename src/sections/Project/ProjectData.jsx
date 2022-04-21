@@ -19,35 +19,25 @@ import './project.css'
 
 const ProjectData = [
     {
-        title: <h2>Support Desk</h2>,
+        title: 'Support Desk',
         screenshot: supportDesk,
-        description: (
-            <div className='dataDescription'>
-                <ul>
-                    <li>
-                        <p>
-                            A support desk web application that allows user to
-                            create and manage tickets for electronic devices
-                            using MongoDB, Express.js, React.js and Node.js
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Applied Redux Toolkit to manage the state of user
-                            authentication, tickets and notes, Axios for HTTP
-                            Client, Mongoose for the creation of data models,
-                            and JSON Web Token for secure data transmission
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Utilized Postman for API testing of users, tickets
-                            and notes
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        ),
+        descriptions: [
+            {
+                idx: '1',
+                content:
+                    'A support desk web application that allows user to create and manage tickets for electronic devices using MongoDB, Express.js, React.js and Node.js',
+            },
+            {
+                idx: '2',
+                content:
+                    'Applied Redux Toolkit to manage the state of user authentication, tickets and notes, Axios for HTTP Client, Mongoose for the creation of data models, and JSON Web Token for secure data transmission',
+            },
+            {
+                idx: '3',
+                content:
+                    'Utilized Postman for API testing of users, tickets and notes',
+            },
+        ],
         links: [
             {
                 content: 'https://linsupportdesk.herokuapp.com/',
@@ -70,36 +60,23 @@ const ProjectData = [
     {
         title: 'House Market',
         screenshot: houseMarket,
-        description: (
-            <div className='dataDescription'>
-                <ul>
-                    <li>
-                        <p>
-                            A house trading market web application that allows
-                            user to rent/buy/sell their property using React.js
-                            and Firebase
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Fulfilled sign up, single sign-on with Google
-                            account, and send password reset email using
-                            Firebase Authentication, and stored data of users
-                            and property listings using Firebase Firestore
-                            Database
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Used React packages, such as Leaflet to show
-                            location on map, Swiper to demonstrate image slider
-                            of houses, and React-Toastify to display
-                            notifications
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        ),
+        descriptions: [
+            {
+                idx: '1',
+                content:
+                    'A house trading market web application that allows user to rent/buy/sell their property using React.js and Firebase',
+            },
+            {
+                idx: '2',
+                content:
+                    'Fulfilled sign up, single sign-on with Google account, and send password reset email using Firebase Authentication, and stored data of users and property listings using Firebase Firestore Database',
+            },
+            {
+                idx: '3',
+                content:
+                    'Used React packages, such as Leaflet to show location on map, Swiper to demonstrate image slider of houses, and React-Toastify to display notifications',
+            },
+        ],
         links: [
             {
                 content:
@@ -121,33 +98,23 @@ const ProjectData = [
     {
         title: 'Github Finder',
         screenshot: githubFinder,
-        description: (
-            <div className='dataDescription'>
-                <ul>
-                    <li>
-                        <p>
-                            A search engine that lets the user to search GitHub
-                            profiles and see profile details using React.js and
-                            GitHub API
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Used react packages, such as tailwindCSS, daisyUI,
-                            react-icons to develop and implement frontend
-                            components
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Designed a responsive web to optimize the appearance
-                            of the site depending on the screen size such as for
-                            desktops, tablets and mobiles
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        ),
+        descriptions: [
+            {
+                idx: '1',
+                content:
+                    'A search engine that lets the user to search GitHub profiles and see profile details using React.js and GitHub API',
+            },
+            {
+                idx: '2',
+                content:
+                    'Used react packages, such as tailwindCSS, daisyUI, react-icons to develop and implement frontend components',
+            },
+            {
+                idx: '3',
+                content:
+                    'Designed a responsive web to optimize the appearance of the site depending on the screen size such as for desktops, tablets and mobiles',
+            },
+        ],
         links: [
             {
                 content: 'https://github-finder-linno60.vercel.app/',
@@ -168,30 +135,23 @@ const ProjectData = [
     {
         title: 'Feedback',
         screenshot: feedbackApp,
-        description: (
-            <div className='dataDescription'>
-                <ul>
-                    <li>
-                        <p>
-                            A feedback application that allows user to rate and
-                            review the service using React.js
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Included edit and delete such that user can manage
-                            existing reviews and return a new average rating
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Used React Router Dom for routing and Framer Motion
-                            for the animation of adding and removing a review
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        ),
+        descriptions: [
+            {
+                idx: '1',
+                content:
+                    'A feedback application that allows user to rate and review the service using React.js',
+            },
+            {
+                idx: '2',
+                content:
+                    'Included edit and delete such that user can manage existing reviews and return a new average rating',
+            },
+            {
+                idx: '3',
+                content:
+                    'Used React Router Dom for routing and Framer Motion for the animation of adding and removing a review',
+            },
+        ],
         links: [
             {
                 content: 'https://infallible-easley-2128aa.netlify.app/',

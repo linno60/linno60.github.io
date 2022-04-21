@@ -5,16 +5,21 @@ const icon = {
     iconImage: '',
 }
 
+const desp = {
+    idx: '',
+    content: '',
+}
+
 export const ProjectItem = {
     title: '',
     screenshot: '',
-    description: '',
+    descriptions: desp,
     links: icon,
     stacks: icon,
 }
 
 const ProjectTemplate = (props) => {
-    const { screenshot, title, description, links, stacks } = props
+    const { screenshot, title, descriptions, links, stacks } = props
 
     return (
         <>
@@ -45,7 +50,20 @@ const ProjectTemplate = (props) => {
                         </div>
                     )}
 
-                    {description && <div>{description}</div>}
+                    {descriptions && (
+                        <div>
+                            <ul>
+                                {descriptions.map((description) => (
+                                    <li
+                                        key={description.idx}
+                                        className='projectDesp'
+                                    >
+                                        <p>{description.content}</p>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
 
                     {links && (
                         <div className='mt-5'>

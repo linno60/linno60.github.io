@@ -23,6 +23,19 @@
     margin: auto 1.25rem;
 }
 
+.projectTemplate .projectDesp {
+    list-style-type: circle;
+    text-align: left;
+    position: relative;
+    left: 2.5%;
+}
+
+.projectTemplate .projectDesp p {
+    font-size: 1.3rem;
+    line-height: 1.95rem;
+    margin: 1rem auto;
+}
+
 .projectTemplate .projectImg {
     width: 50%;
     padding-left: 2.5%;
@@ -41,18 +54,6 @@
 }
 
 /* Project Data */
-.dataDescription li {
-    list-style-type: circle;
-    text-align: left;
-    position: relative;
-    left: 2.5%;
-}
-
-.dataDescription p {
-    font-size: 1.3rem;
-    line-height: 1.95rem;
-    margin: 1rem auto;
-}
 
 .linkIcon {
     transition: all 0.5s ease-in-out;
@@ -101,7 +102,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .dataDescription p {
+    .projectTemplate .projectDesp p {
         font-size: 1rem;
         line-height: 1.5rem;
         margin: 1rem auto;
