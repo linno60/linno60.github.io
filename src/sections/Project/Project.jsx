@@ -8,12 +8,16 @@ function Project() {
 
     return (
         <section ref={projectRef} id='projectContainer' className='project'>
-            <hr class='solid'></hr>
+            <hr className='solid'></hr>
             <h1>My Projects</h1>
 
             {ProjectData.map((project) => (
-                <div className='aos-init aos-animate' data-aos='fade-up'>
-                    <ProjectTemplate {...project} key={project.logo} />
+                <div
+                    key={project.title}
+                    className='aos-init aos-animate'
+                    data-aos='fade-up'
+                >
+                    <ProjectTemplate {...project} />
                 </div>
             ))}
         </section>

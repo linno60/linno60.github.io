@@ -90,7 +90,7 @@ const ProjectTemplate = (props) => {
                     )}
                 </figure>
             </div>
-            <hr class='solid'></hr>
+            <hr className='solid'></hr>
         </>
     )
 }

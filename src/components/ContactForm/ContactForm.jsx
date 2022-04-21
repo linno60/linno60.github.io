@@ -8,7 +8,7 @@ function ContactForm() {
     }
     return (
         <form className='contact-form' onSubmit={handleSubmit}>
-            <label for='form'>
+            <label htmlFor='form'>
                 <h2>Say Hi</h2>
             </label>
             <input id='name' type='text' name='name' placeholder='Name' />
