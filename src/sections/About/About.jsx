@@ -1,15 +1,15 @@
 import { useNav } from '../../hooks/useNav'
 import Skills from '../../components/SkillTagCloud'
-import './about.css'
+import styles from './styles.module.scss'
 
 function About() {
     const aboutRef = useNav('Home')
 
     return (
-        <section ref={aboutRef} id='aboutContainer' className='about'>
-            <div className='aboutDiv'>
+        <section ref={aboutRef} id='aboutContainer' className={styles.about}>
+            <div className={styles.aboutDiv}>
                 <div
-                    className='aboutMe aos-init aos-animate'
+                    className={`${styles.aboutMe} aos-init aos-animate `}
                     data-aos='fade-right'
                 >
                     <h1>Hi! I'm Lin</h1>
@@ -33,7 +33,7 @@ function About() {
                     </p>
                 </div>
                 <div
-                    className='skillTagCloud aos-init aos-animate'
+                    className={`${styles.skillTagCloud} aos-init aos-animate`}
                     data-aos='fade-left'
                 >
                     <Skills />

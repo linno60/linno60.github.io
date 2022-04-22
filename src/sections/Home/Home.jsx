@@ -1,11 +1,11 @@
 import { useLottie } from '../../hooks/useLottie'
-import arrow from '../../assets/lotties/arrow.json'
 import { useNav } from '../../hooks/useNav'
 import { useTyped } from '../../hooks/useTyped'
-import './home.css'
 import { ParticlesComponent } from '../../components/Particles'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { GrMail } from 'react-icons/gr'
+import arrow from '../../assets/lotties/arrow.json'
+import styles from './styles.module.scss'
 
 function Home() {
     const arrowAnimation = useLottie(arrow)
@@ -22,19 +22,19 @@ function Home() {
     const el = useTyped(strings)
 
     return (
-        <section ref={homeRef} id='homeContainer' className='home'>
-            <ParticlesComponent />
-            <div className='typedDiv'>
-                <span className='homeTyped' ref={el} />
+        <section ref={homeRef} id='homeContainer' className={styles.home}>
+            <ParticlesComponent id={styles.tsparticles} />
+            <div className={styles.typedDiv}>
+                <span className={styles.homeTyped} ref={el} />
             </div>
-            <div className='contactLinks'>
+            <div className={styles.contactLinks}>
                 <a
                     href='https://www.linkedin.com/in/lin-liu-224167145/'
                     aria-label='linkedin link'
                     target='_blank'
                     rel='noreferrer'
                 >
-                    <FaLinkedin className='contactIcon' size={42} />
+                    <FaLinkedin className='icon' size={42} />
                 </a>
 
                 <a
@@ -43,7 +43,7 @@ function Home() {
                     target='_blank'
                     rel='noreferrer'
                 >
-                    <FaGithub className='contactIcon' size={42} />
+                    <FaGithub className='icon' size={42} />
                 </a>
 
                 <button
@@ -52,12 +52,12 @@ function Home() {
                         e.preventDefault()
                     }}
                 >
-                    <GrMail className='contactIcon' size={42} />
+                    <GrMail className='icon' size={42} />
                 </button>
             </div>
 
             <button
-                className='arrowDiv'
+                className={styles.arrowDiv}
                 onClick={scrollToAbout}
                 ref={arrowAnimation}
             />

@@ -1,0 +1,93 @@
+$pinkColor: #e91f63;
+
+.home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 54px;
+
+    .typedDiv {
+        text-align: center;
+        position: relative;
+        top: 20%;
+
+        .homeTyped {
+            color: $pinkColor;
+            white-space: nowrap;
+            font-size: 6rem;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.4;
+
+            + span {
+                color: $pinkColor;
+                font-size: 6rem;
+            }
+        }
+    }
+
+    .contactLinks {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 20%;
+    }
+
+    .arrowDiv {
+        position: absolute;
+        bottom: 1%;
+        left: calc(50vw - (150px / 2));
+        width: 150px;
+
+        &:hover {
+            background-color: rgba(233,31,99,0.15);
+            transform: scale(1.05);
+            border-radius: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home{
+        .typedDiv {
+            .homeTyped {
+                font-size: 5rem;
+                font-weight: 600;
+    
+                + span {
+                    color: $pinkColor;
+                    font-size: 5rem;
+                }
+            }
+        }
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .home{
+        .typedDiv {
+            .homeTyped {
+                font-size: 3rem;
+                font-weight: 600;
+    
+                + span {
+                    color: $pinkColor;
+                    font-size: 3rem;
+                }
+            }
+        }
+    }  
+}
+
+@media screen and (max-width: 576px) {
+    .home .typedDiv {
+        .homeTyped {
+            font-size: 2rem;
+
+            + span {
+                color: $pinkColor;
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+@keyframes spinIn {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinOut {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.contact {
+    height: calc(100vh - 54px);
+    background-color: #f3f4f3;
+    width: 100%;
+
+    .contactTitle {
+        text-align: center;
+        padding-top: 54px;
+    }
+
+    .contactAll {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+
+        .contactLeft {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+
+            .contactImg {
+                width: 30%;
+                margin: 0 auto;
+
+                img {
+                    border-radius: 50%;
+                    animation: spinOut 0.2s;
+                    width: 70%;
+                    margin: 0 auto;
+
+                    &:hover {
+                        animation: spinIn 0.2s;
+                    }
+                }
+            }
+
+            .contactLinks {
+                display: flex;
+                margin: 0 auto;
+
+                .contactIcon {
+                    animation: spinOut 0.2s;
+                    margin: 10px;
+                    color: #515357;
+
+                    &:hover {
+                        animation: spinIn 0.2s;
+                        color: #e91f63;
+                    }
+                }
+
+                .smallScreenEmail {
+                    display: none;
+                }
+            }
+
+            .mailButton {
+                width: 25%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+
+        .contactForm {
+            width: 50%;
+        }
+    }    
+}
+
+@media screen and (max-width: 768px){
+    .contact {
+        min-height: 100vh;
+
+        .contactAll {
+            flex-direction: column;
+
+            .contactLeft {
+                width: 80%;
+                margin: 2% auto 0 auto;
+
+                .contactLinks {
+                    .smallScreenEmail {
+                        display: flex;
+                    }
+                }
+
+                .mailButton {
+                    display: none;
+                }
+
+                
+            }
+
+            .contactForm {
+                margin: 5% auto 0 auto;
+            }
+        }
+       
+    }
+}

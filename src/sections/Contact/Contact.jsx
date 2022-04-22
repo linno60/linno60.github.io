@@ -1,11 +1,11 @@
 import { useNav } from '../../hooks/useNav'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import sayHi from '../../assets/lotties/sayHi.json'
 import { useLottie } from '../../hooks/useLottie'
-import './contact.css'
 import { GrMail } from 'react-icons/gr'
+import sayHi from '../../assets/lotties/sayHi.json'
 import cat from '../../assets/images/cat.png'
 import ContactForm from '../../components/ContactForm/ContactForm'
+import styles from './styles.module.scss'
 
 function Contact() {
     const contactRef = useNav('Home')
@@ -17,24 +17,31 @@ function Contact() {
     }
 
     return (
-        <section ref={contactRef} id='contactContainer' className='contact'>
-            <h1 className='contactTitle'>Contact</h1>
-            <div className='contactAll'>
+        <section
+            ref={contactRef}
+            id='contactContainer'
+            className={styles.contact}
+        >
+            <h1 className={styles.contactTitle}>Contact</h1>
+            <div className={styles.contactAll}>
                 <div
-                    className='contactLeft aos-init aos-animate'
+                    className={`${styles.contactLeft} aos-init aos-animate`}
                     data-aos='fade-up'
                 >
-                    <figure className='contactImg'>
+                    <figure className={styles.contactImg}>
                         <img src={cat} alt='cat' />
                     </figure>
-                    <div className='contactLinks'>
+                    <div className={styles.contactLinks}>
                         <a
                             href='https://github.com/linno60/'
                             aria-label='github link'
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <FaGithub className='contactIcon' size={42} />
+                            <FaGithub
+                                className={styles.contactIcon}
+                                size={42}
+                            />
                         </a>
 
                         <a
@@ -43,7 +50,10 @@ function Contact() {
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <FaLinkedin className='contactIcon' size={42} />
+                            <FaLinkedin
+                                className={styles.contactIcon}
+                                size={42}
+                            />
                         </a>
                         <button
                             onClick={(e) => {
@@ -53,18 +63,22 @@ function Contact() {
                             }}
                         >
                             <GrMail
-                                className='contactIcon smallScreenEmail'
+                                className={
+                                    styles.smallScreenEmail +
+                                    ' ' +
+                                    styles.contactIcon
+                                }
                                 size={42}
                             />
                         </button>
                     </div>
-                    <div className='mailButton'>
+                    <div className={styles.mailButton}>
                         <button onClick={mailTo} ref={sayHiAnimation} />
                     </div>
                 </div>
 
                 <div
-                    className='contactForm aos-init aos-animate'
+                    className={`${styles.contactForm} aos-init aos-animate`}
                     data-aos='fade-up'
                 >
                     <ContactForm />

@@ -15,7 +15,6 @@ import githubFinder from '../../assets/screenshots/githubFinder.png'
 import feedbackApp from '../../assets/screenshots/feedbackApp.png'
 
 import { FaGithub, FaLink } from 'react-icons/fa'
-import './project.css'
 
 const ProjectData = [
     {
@@ -41,11 +40,11 @@ const ProjectData = [
         links: [
             {
                 content: 'https://linsupportdesk.herokuapp.com/',
-                iconImage: <FaLink size={42} className='linkIcon' />,
+                iconImage: <FaLink size={42} className='icon' />,
             },
             {
                 content: 'https://github.com/linno60/support-desk-app',
-                iconImage: <FaGithub size={42} className='linkIcon' />,
+                iconImage: <FaGithub size={42} className='icon' />,
             },
         ],
         stacks: [
@@ -81,11 +80,11 @@ const ProjectData = [
             {
                 content:
                     'https://house-marketplace-project-linno60.vercel.app/',
-                iconImage: <FaLink size={42} className='linkIcon' />,
+                iconImage: <FaLink size={42} className='icon' />,
             },
             {
                 content: 'https://github.com/linno60/house-marketplace-project',
-                iconImage: <FaGithub size={42} className='linkIcon' />,
+                iconImage: <FaGithub size={42} className='icon' />,
             },
         ],
         stacks: [
@@ -118,11 +117,11 @@ const ProjectData = [
         links: [
             {
                 content: 'https://github-finder-linno60.vercel.app/',
-                iconImage: <FaLink size={42} className='linkIcon' />,
+                iconImage: <FaLink size={42} className='icon' />,
             },
             {
                 content: 'https://github.com/linno60/github-finder',
-                iconImage: <FaGithub size={42} className='linkIcon' />,
+                iconImage: <FaGithub size={42} className='icon' />,
             },
         ],
         stacks: [
@@ -155,11 +154,11 @@ const ProjectData = [
         links: [
             {
                 content: 'https://infallible-easley-2128aa.netlify.app/',
-                iconImage: <FaLink size={42} className='linkIcon' />,
+                iconImage: <FaLink size={42} className='icon' />,
             },
             {
                 content: 'https://github.com/linno60/feedback-app',
-                iconImage: <FaGithub size={42} className='linkIcon' />,
+                iconImage: <FaGithub size={42} className='icon' />,
             },
         ],
         stacks: [

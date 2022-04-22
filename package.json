@@ -19,6 +19,7 @@
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "react-tsparticles": "^1.43.1",
+    "sass": "^1.50.1",
     "simple-icons": "^6.18.0",
     "typed.js": "^2.0.12",
     "web-vitals": "^2.1.4"

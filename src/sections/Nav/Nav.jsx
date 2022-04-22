@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react'
 import { AiOutlineMenu, AiOutlineCloseSquare } from 'react-icons/ai'
 import { NavContext } from '../../context/NavContext'
-import './nav.css'
+import styles from './styles.module.scss'
 
 function Nav() {
     const navLinks = [
@@ -37,9 +37,9 @@ function Nav() {
 
     return (
         <nav>
-            <div className='nav'>
+            <div className={styles.nav}>
                 {/* Large Screen Navbar */}
-                <div className='navLinks'>
+                <div className={styles.navLinks}>
                     {navLinks.map(({ navLinkId, scrollToId }) => (
                         <NavLink
                             key={navLinkId}
@@ -51,7 +51,7 @@ function Nav() {
 
                 {/* Small Screen Menu Button */}
                 <span
-                    className='navButton'
+                    className={styles.navButton}
                     onClick={() => setSmallScreen(!smallScreen)}
                 >
                     {smallScreen ? (
@@ -64,13 +64,13 @@ function Nav() {
 
             {/* Small Screen Navbar */}
             {smallScreen && (
-                <div className='smallScreenNav'>
+                <div className={styles.smallScreenNav}>
                     {navLinks.map(({ navLinkId, scrollToId }) => (
                         <NavLink
                             key={navLinkId}
                             navLinkId={navLinkId}
                             scrollToId={scrollToId}
-                            className='smallScreenNavItems'
+                            className={styles.smallScreenNavItems}
                         />
                     ))}
                 </div>

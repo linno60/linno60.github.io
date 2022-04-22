@@ -1,4 +1,4 @@
-import './project.css'
+import styles from './styles.module.scss'
 
 const icon = {
     content: '',
@@ -23,16 +23,16 @@ const ProjectTemplate = (props) => {
 
     return (
         <>
-            <div className='projectTemplate'>
+            <div className={styles.projectTemplate}>
                 <div
-                    className='projectContent text-center aos-init aos-animate'
+                    className={`${styles.projectContent} text-center aos-init aos-animate`}
                     data-aos='fade-right'
                 >
                     {title && <h2>{title}</h2>}
 
                     {stacks && (
                         <div>
-                            <ul className='stackUsed'>
+                            <ul className={styles.stackUsed}>
                                 {stacks.map((stack) => (
                                     <li
                                         key={stack.content}
@@ -56,7 +56,7 @@ const ProjectTemplate = (props) => {
                                 {descriptions.map((description) => (
                                     <li
                                         key={description.idx}
-                                        className='projectDesp'
+                                        className={styles.projectDesp}
                                     >
                                         <p>{description.content}</p>
                                     </li>
@@ -73,7 +73,7 @@ const ProjectTemplate = (props) => {
                                     href={link.content}
                                     target='_blank'
                                     rel='noreferrer'
-                                    className='links'
+                                    className={styles.links}
                                 >
                                     {link.iconImage}
                                 </a>
@@ -82,7 +82,7 @@ const ProjectTemplate = (props) => {
                     )}
                 </div>
 
-                <figure className='projectImg '>
+                <figure className={styles.projectImg}>
                     {screenshot && (
                         <div className='shadow-lg'>
                             <img src={screenshot} alt={title} />
