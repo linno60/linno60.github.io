@@ -1,5 +1,5 @@
 import { useForm, ValidationError } from '@formspree/react'
-import './contactForm.css'
+import styles from './styles.module.scss'
 
 function ContactForm() {
     const [state, handleSubmit] = useForm('mwkyryjv')
@@ -7,7 +7,7 @@ function ContactForm() {
         return <p>Got it! I'll try to get back to you ASAP!</p>
     }
     return (
-        <form className='contact-form' onSubmit={handleSubmit}>
+        <form className={styles.contactForm} onSubmit={handleSubmit}>
             <label htmlFor='form'>
                 <h2>Say Hi</h2>
             </label>
@@ -25,7 +25,7 @@ function ContactForm() {
                 errors={state.errors}
             />
             <button
-                className='submit-btn'
+                className={styles.submitBtn}
                 type='submit'
                 disabled={state.submitting}
             >
