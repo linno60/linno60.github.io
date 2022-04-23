@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunklin_portfolio=self.webpackChunklin_portfolio||[]).push([[824],{7943:function(e,o,r){r.r(o),r.d(o,{default:function(){return l}});var i=r(8014),n=r(4373),s="styles_footerDetail__Tyydr",t=r(184);var l=function(){return(0,t.jsx)("footer",{children:(0,t.jsxs)("p",{className:s,children:["Made with\xa0",(0,t.jsx)(i.jzb,{color:"#967259",size:28})," \xa0and\xa0",(0,t.jsx)(n.$g3,{color:"#e31b23",size:28}),"\xa0\xa0\xa9 Lin Liu"]})})}}}]);
+//# sourceMappingURL=824.ecca7a9a.chunk.js.map
