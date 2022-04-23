@@ -63,6 +63,7 @@ hr.solid {
     bottom: 5%;
     border-radius: 50%;
     transition: all 0.3s ease;
+    z-index: 1;
 
     &:hover {
         background-color: #e91f63;
