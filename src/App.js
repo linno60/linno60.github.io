@@ -6,6 +6,7 @@ import About from './sections/About/About'
 import Project from './sections/Project/Project'
 import Contact from './sections/Contact/Contact'
 import Footer from './sections/Footer/Footer'
+import BackToTop from './components/BackToTop'
 import { NavProvider } from './context/NavContext'
 
 import AOS from 'aos'
@@ -25,6 +26,7 @@ function App() {
         <Project />
         <Contact />
       </NavProvider>
+      <BackToTop />
       <Footer />
     </>
   )
