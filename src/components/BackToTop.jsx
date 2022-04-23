@@ -31,8 +31,8 @@ function BackToTop() {
     return (
         <>
             {isVisible && (
-                <button className='backToTop' onClick={scrollToTop}>
-                    <FaAngleUp size={42} color='#fff' />
+                <button onClick={scrollToTop}>
+                    <FaAngleUp className='backToTop' size={42} />
                 </button>
             )}
         </>

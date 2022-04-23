@@ -48,7 +48,7 @@ hr.solid {
 .icon {
     margin: 10px;
     color: #515357;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 
     &:hover {
         color: #e91f63;
@@ -57,10 +57,16 @@ hr.solid {
 
 .backToTop {
     position: fixed;
+    color: #fff;
     background-color: #515357;
     right: 5%;
     bottom: 5%;
     border-radius: 50%;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #e91f63;
+    }
 }
 
 @media screen and (max-width: 480px){

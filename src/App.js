@@ -19,6 +19,7 @@ function App() {
 
   return (
     <>
+      <BackToTop />
       <NavProvider>
         <Nav />
         <Home />
@@ -26,7 +27,6 @@ function App() {
         <Project />
         <Contact />
       </NavProvider>
-      <BackToTop />
       <Footer />
     </>
   )
