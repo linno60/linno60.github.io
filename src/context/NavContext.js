@@ -2,7 +2,7 @@ import { createContext, useState } from 'react'
 
 export const NavContext = createContext()
 
-export const NavProvider = ({ children }) => {
+const NavProvider = ({ children }) => {
 	const [activeNavLinkId, setActiveNavLinkId] = useState('')
 
 	const providerValue = {
@@ -14,3 +14,5 @@ export const NavProvider = ({ children }) => {
 		<NavContext.Provider value={providerValue}>{children}</NavContext.Provider>
 	)
 }
+
+export default NavProvider
